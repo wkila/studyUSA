@@ -212,7 +212,8 @@ body {
 
 header {
     overflow: hidden !important;
-    position: relative;
+    position: fixed;
+    width: 100%;
 
     .logo {
         margin-left: 30px;
@@ -930,6 +931,10 @@ main {
 footer {
     background-color: $blue;
     padding-top: 0;
+    
+    nav {
+        background-color: $blue !important;
+    }
     
     &.mainSection {
         max-width: initial;

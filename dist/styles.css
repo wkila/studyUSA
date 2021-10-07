@@ -104,7 +104,6 @@ select {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 1000000px;
   }
 }
 @media (max-width: 1770px) {
@@ -113,7 +112,6 @@ select {
   }
 
   .header-wrapper {
-    max-width: 1550px !important;
     margin: 0 auto;
   }
 }
@@ -123,7 +121,6 @@ select {
   }
 
   .header-wrapper {
-    max-width: 1460px !important;
     margin: 0 auto;
   }
 }
@@ -133,7 +130,6 @@ select {
   }
 
   .header-wrapper {
-    max-width: 1370px !important;
     margin: 0 auto;
   }
 
@@ -147,7 +143,6 @@ select {
   }
 
   .header-wrapper {
-    max-width: 1270px !important;
     margin: 0 auto;
   }
 }
@@ -157,7 +152,6 @@ select {
   }
 
   .header-wrapper {
-    max-width: 1270px !important;
     margin: 0 auto;
   }
 }
@@ -782,7 +776,8 @@ body .burger .burger-menu span {
 
 header {
   overflow: hidden !important;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 header .logo {
   margin-left: 30px;
@@ -1492,6 +1487,9 @@ main {
 footer {
   background-color: #053651;
   padding-top: 0;
+}
+footer nav {
+  background-color: #053651 !important;
 }
 footer.mainSection {
   max-width: initial;

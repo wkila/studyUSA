@@ -19,6 +19,7 @@ tabMenu.addEventListener("click", tabClick)
 body.addEventListener("click", contactHandler)
 tabBurgerMenu.addEventListener("click", linkHandler)
 burger.addEventListener("click", burgerClick)
+navContainer.addEventListener("click", navHandler)
 
 function burgerClick(event) {
     let item = event.target
@@ -31,6 +32,7 @@ function burgerClick(event) {
 }
 
 function linkHandler(event) {
+    event.preventDefault()
     let item = event.target
 
     if (item.nodeName === "A") {
@@ -39,9 +41,12 @@ function linkHandler(event) {
 }
 
 function tabClick(event) {
+    event.preventDefault
+
     const activeTab = event.target
     if (activeTab.nodeName === "A") {
-
+        slowScroll(activeTab)
+        
         activeTab.parentElement.classList.add("active")
 
         itemsBurger.forEach(element => {
@@ -68,7 +73,6 @@ function contactHandler(event) {
 }
 
 function switcherLine(event) {
-    event.preventDefault()
     
     const activeLink = event.target
     const widthActive = activeLink.getBoundingClientRect().width
@@ -79,6 +83,29 @@ function switcherLine(event) {
         const width = activeLink.offsetLeft - line.offsetLeft
         line.style.transform = `translate(${width}px, 5px)`
     }
+}
+
+function navHandler(event) {
+    event.preventDefault()
+
+    let link = event.target
+
+    if (link.classList.contains("link-item")) {
+        slowScroll(link)
+    }
+}
+
+function slowScroll(link) {
+    let topOffset = 0
+    let href = link.getAttribute('href').substring(1)
+    const scrollTarget = document.getElementById(href)
+    const elementPosition = scrollTarget.getBoundingClientRect().top
+    const offsetPosition = elementPosition - topOffset
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+    })
 }
 
 
