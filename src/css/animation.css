@@ -1,0 +1,12 @@
+@-webkit-keyframes burger-translate {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes burger-translate {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
