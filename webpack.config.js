@@ -11,8 +11,8 @@ module.exports = {
     },
     plugins: [
         new HTMLPlugin({
-            filename: 'index.php',
-            template: './src/source.php'
+            filename: 'index.html',
+            template: './src/source.html'
         })
     ],
     resolve: {

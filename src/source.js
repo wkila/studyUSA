@@ -12,13 +12,13 @@ const burger = document.getElementById("burger"),
     backgroundBlack = document.querySelector(".background-black")
 
 line.style.width = `${links[0].getBoundingClientRect().width}px`
-line.style.transform = `translate(${links[0].offsetLeft - line.offsetLeft}px, -5px)`
+line.style.transform = `translate(${links[0].offsetLeft - line.offsetLeft}px, 5px)`
 
 containerLins.addEventListener("click", switcherLine)
-navContainer.addEventListener("click", burgerClick)
 tabMenu.addEventListener("click", tabClick)
 body.addEventListener("click", contactHandler)
 tabBurgerMenu.addEventListener("click", linkHandler)
+burger.addEventListener("click", burgerClick)
 
 function burgerClick(event) {
     let item = event.target
@@ -77,7 +77,7 @@ function switcherLine(event) {
         line.style.width = `${widthActive}px`
 
         const width = activeLink.offsetLeft - line.offsetLeft
-        line.style.transform = `translate(${width}px, -5px)`
+        line.style.transform = `translate(${width}px, 5px)`
     }
 }
 

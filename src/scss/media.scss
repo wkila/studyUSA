@@ -1,5 +1,5 @@
 
-@media (max-width: 770) {
+@media (max-width: 770px) {
     .entrance-new {
         .card {
             max-width: 80% !important;
@@ -354,10 +354,6 @@
                 display: none;
             }
 
-            .burger {
-                display: block !important;
-            }
-
             .logo {
                 margin-left: 30px !important;
             }
@@ -366,6 +362,10 @@
 
     body {
         .tab-bar {
+            display: block !important;
+        }
+        
+        .burger {
             display: block !important;
         }
 

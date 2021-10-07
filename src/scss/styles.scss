@@ -151,6 +151,7 @@ body {
 
 .background-black {
     display: none;
+    z-index: 2;
 
     &.handleActive {
         display: block;
@@ -165,8 +166,10 @@ body {
 body {
     .burger {
         margin-right: 30px;
-        z-index: 2;
+        z-index: 4;
         position: fixed;
+        right: 10px;
+        top: 30px;    
 
         &.handleActive {
             .line-burger {
@@ -263,6 +266,7 @@ body {
 }
 
 .tab-burger-menu {
+    z-index: 3;
     .item-burger {
 
         .active {
@@ -300,7 +304,7 @@ body {
 .line-cross {
     height: 1px;
     width: 100px;
-    transform: translate(0, -5px);
+    transform: translate(0, 5px);
     transition: .5s ease-in-out all;
     background-color: $blue;
 }
@@ -320,8 +324,10 @@ body {
 
     nav {
         padding-top: 10px;
+        padding-bottom: 10px;
         max-width: 1670px;    
         margin: 0 auto;
+        background-color: $white;
         
         display: flex;
         align-items: center;
