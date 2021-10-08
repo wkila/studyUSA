@@ -538,7 +538,7 @@ select {
 }
 @media (max-width: 450px) {
   .header-inner .content {
-    width: 330px !important;
+    width: 390px !important;
   }
   .header-inner .content h1 {
     font-size: 30px !important;
@@ -547,7 +547,7 @@ select {
     font-size: 20px !important;
   }
   .header-inner .content .default-title {
-    font-size: 12px;
+    font-size: 18px;
     padding: 0 10px !important;
   }
 }

@@ -302,6 +302,7 @@
 
             .content {
                 padding-left: 0 !important;
+                
             }
         }
     }
@@ -548,7 +549,7 @@
 @media (max-width: 450px){
     .header-inner {
         .content {
-            width: 330px !important;
+            width: 390px !important;
 
             h1 {
                 font-size: 30px !important;
@@ -559,7 +560,7 @@
             }
 
             .default-title {
-                font-size: 12px;
+                font-size: 18px;
                 padding: 0 10px !important;
             }
         }

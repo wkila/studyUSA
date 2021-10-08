@@ -11,6 +11,9 @@ const burger = document.getElementById("burger"),
     tabBurgerMenu = document.querySelector(".tab-burger-menu"),
     backgroundBlack = document.querySelector(".background-black")
 
+let currentPos = 0
+const navHeight = navContainer.offsetHeight
+
 line.style.width = `${links[0].getBoundingClientRect().width}px`
 line.style.transform = `translate(${links[0].offsetLeft - line.offsetLeft}px, 5px)`
 
@@ -96,14 +99,25 @@ function navHandler(event) {
 }
 
 function slowScroll(link) {
-    let topOffset = 0
     let href = link.getAttribute('href').substring(1)
+
     const scrollTarget = document.getElementById(href)
     const elementPosition = scrollTarget.getBoundingClientRect().top
-    const offsetPosition = elementPosition - topOffset
+
+    console.log("FIRST", currentPos, elementPosition, scrollTarget)
+
+    if (currentPos === 0) {
+        currentPos = elementPosition
+    }else if (currentPos < elementPosition) {
+        currentPos = (elementPosition + currentPos)
+    }else if (currentPos > elementPosition) {
+        currentPos = (currentPos + elementPosition)
+    }
+
+    console.log("SECOND", currentPos, elementPosition, scrollTarget)
 
     window.scrollTo({
-        top: offsetPosition,
+        top: currentPos,
         behavior: 'smooth'
     })
 }
