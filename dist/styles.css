@@ -788,7 +788,7 @@ body {
 }
 
 .mainSection {
-  max-width: 1370px;
+  max-width: 1390px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
   padding-top: 70px;
@@ -798,9 +798,9 @@ body {
   text-align: center;
 }
 .mainSection .high-title-block h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .mainSection .high-title-block h2 span {
   color: #CA0000;
@@ -849,13 +849,13 @@ body {
 }
 
 .line-cross {
-  height: 1px;
+  height: 2px;
   width: 100px;
   -webkit-transform: translate(0, 5px);
           transform: translate(0, 5px);
   -webkit-transition: 0.5s ease-in-out all;
   transition: 0.5s ease-in-out all;
-  background-color: #053651;
+  background-color: #CA0000;
 }
 
 .header-wrapper a {
@@ -933,12 +933,13 @@ main {
 }
 .header-inner .card-info .content {
   padding-left: 60px;
+  padding-right: 80px;
 }
 .header-inner .card-info h1 {
   padding-top: 45px;
-  font-size: 70px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .header-inner .card-info h1 span {
   color: #CA0000;
@@ -963,8 +964,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 390px 390px 390px;
-  grid-template-columns: 390px 390px 390px;
+  -ms-grid-columns: 450px 450px 450px;
+  grid-template-columns: 450px 450px 450px;
 }
 .join-univ .content .item-content {
   height: 320px;
@@ -973,7 +974,7 @@ main {
 .join-univ .content .title {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  max-width: 80%;
+  max-width: 410px;
   margin: 0 auto;
   background-color: #fff;
   text-align: center;
@@ -983,7 +984,7 @@ main {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   max-width: 340px;
 }
 .join-univ .content .title h3 span {
@@ -997,6 +998,41 @@ main {
   max-width: 530px;
   margin: 0 auto;
 }
+.feature .feature-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 1000px;
+  width: 1000px;
+  margin-bottom: 30px;
+}
+.feature .feature-info .info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 480px;
+  width: 480px;
+  border-radius: 30px;
+  padding: 30px;
+  -webkit-box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
+}
+.feature .feature-info .info-card p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
 .feature .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,14 +1041,304 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.feature .structure-block {
+  padding-top: 75px;
+  position: relative;
+}
+.feature .structure-block span {
+  color: #053651;
+}
+.feature .structure-block h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.feature .structure-block .structure-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.feature .structure-block .info-structure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 35px;
+}
+.feature .structure-block .info-structure.second {
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+}
+.feature .structure-block .info-structure .sub-title-block {
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 435px;
+}
+.feature .structure-block .info-structure .sub-title-block .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #CA0000;
+}
+.feature .structure-block .info-structure .sub-title-block .line {
+  width: 30px;
+  height: 2px;
+  background: #053651;
+}
+.feature .structure-block .info-structure .sub-title-block.down-subtitle {
+  max-width: 320px;
+}
+.feature .structure-block .info-structure .sub-title-block.second-title {
+  padding-top: 15px;
+}
+.feature .structure-block .info-structure .mini-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 0;
+  line-height: 15px;
+  max-width: 640px;
+}
+.feature .structure-block .info-structure h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.feature .structure-block .info-structure p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.feature .structure-block .absolute-img {
+  position: absolute;
+  right: 0;
+}
+.feature .structure-block .absolute-img.logo-img {
+  bottom: 30px;
+}
+.feature .structure-block .absolute-img.graph-img {
+  bottom: -30px;
+  right: 20px;
+}
+.feature .structure-block .main-graphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feature .structure-block .main-graphs .second-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.feature .structure-block .main-graphs .second-block .numbers p {
+  margin-left: 26px !important;
+}
+.feature .structure-block .main-graphs .second-block .line .line-green {
+  width: 150px;
+}
+.feature .structure-block .main-graphs .second-block .blocks-graph {
+  margin-left: 0 !important;
+}
+.feature .structure-block .main-graphs .second-block .line {
+  -webkit-transform: translateX(20px) !important;
+          transform: translateX(20px) !important;
+}
+.feature .structure-block .main-graphs .second-block .graph {
+  height: 40%;
+}
+.feature .structure-block .main-graphs .second-block .down-title p span {
+  color: #5C8809 !important;
+}
+.feature .structure-block .main-graphs .graph-block {
+  max-width: 630px;
+  width: 640px;
+  padding: 30px;
+  max-width: 640px;
+  border-radius: 0px 0px 30px 30px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+.feature .structure-block .main-graphs .graph-block .tenis-img {
+  position: absolute;
+  right: 30px;
+}
+.feature .structure-block .main-graphs .graph-block .title h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 280px;
+}
+.feature .structure-block .main-graphs .graph-block .sub-title {
+  padding-top: 25px;
+}
+.feature .structure-block .main-graphs .graph-block .sub-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 10px;
+}
+.feature .structure-block .main-graphs .graph-block .line {
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+  padding-top: 10px;
+}
+.feature .structure-block .main-graphs .graph-block .down-title {
+  padding-top: 5px;
+}
+.feature .structure-block .main-graphs .graph-block .down-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.feature .structure-block .main-graphs .graph-block .down-title p span {
+  color: #FF9900;
+}
+.feature .structure-block .main-graphs .graph-block .graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+.feature .structure-block .main-graphs .graph-block .graph p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 10px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .heigt-nums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 150px;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 60px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .stat-block {
+  width: 22px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange {
+  background: #FF9900;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange.first {
+  height: 45px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange.second {
+  height: 130px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange.third {
+  height: 240px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange.four {
+  height: 216px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .orange.five {
+  height: 76px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green {
+  background: #5C8809;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green.first {
+  height: 45px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green.second {
+  height: 79px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green.third {
+  height: 134px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green.four {
+  height: 144px;
+}
+.feature .structure-block .main-graphs .graph-block .graph .blocks-graph .green.five {
+  height: 58px;
+}
+.feature .structure-block .main-graphs .graph-block .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 225px;
+  width: 225px;
+  padding-top: 10px;
+  max-width: 150px;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feature .structure-block .main-graphs .graph-block .numbers p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 10px;
+  color: #B1BEC6;
+  margin-left: 25px;
+}
 
 .scholarship .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1021,16 +1347,12 @@ main {
   max-width: 660px;
   -webkit-box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
-  padding: 45px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.scholarship .content .tennis img {
-  padding-right: 40px;
 }
 .scholarship .content .tennis .contact-btn {
   margin-top: 20px;
@@ -1053,12 +1375,35 @@ main {
 .scholarship .content .tennis .title span {
   color: #CA0000;
 }
+.scholarship .content .team {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.scholarship .content .team .team-title {
+  border: 5px solid #053651;
+  border-radius: 30px;
+  width: 800px;
+  margin-top: 30px;
+}
 .scholarship .content .team h3 {
   color: #053651;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
+  padding: 30px 45px;
 }
 .scholarship .content .team .titles {
   display: -webkit-box;
@@ -1180,7 +1525,7 @@ main {
 .service .cards .card h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   color: #053651;
 }
@@ -1262,7 +1607,7 @@ main {
   padding-left: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   color: #CA0000;
 }
@@ -1287,7 +1632,7 @@ main {
 .entrance-new .cards .card-consultations .high-title {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #053651;
   padding-top: 40px;
 }
@@ -1295,7 +1640,7 @@ main {
   color: #CA0000;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 40px;
   padding: 30px 0;
 }
@@ -1337,7 +1682,7 @@ main {
 .about-us .content .main-info .default span {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #CA0000;
 }
 .about-us .content .sub-info {
@@ -1352,7 +1697,7 @@ main {
 .about-us .content .sub-info span {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #053651;
 }
 
@@ -1423,7 +1768,7 @@ main {
 .team-project .content h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .team-project .content p {
   font-family: "Montserrat", sans-serif;
@@ -1455,7 +1800,7 @@ main {
           align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .contacts .content .phone a {
   color: #000;
@@ -1467,7 +1812,7 @@ main {
   padding: 30px 0 30px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .contacts .content .mail a {
   color: #000;

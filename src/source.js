@@ -27,7 +27,6 @@ window.addEventListener("scroll", coordHandler)
 
 function coordHandler(event) {
     currentPos = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
-    console.log(currentPos)
 
     document.querySelectorAll(".link-item-header").forEach(element => {
         let href = element.getAttribute('href').substring(1)
@@ -143,7 +142,6 @@ function slowScroll(link) {
 
     const scrollTarget = document.getElementById(href)
     const elementPosition = scrollTarget.getBoundingClientRect().top
-    console.log(elementPosition, href)
 
     if (currentPos === 0) {
         currentPos = elementPosition

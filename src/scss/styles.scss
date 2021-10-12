@@ -15,22 +15,25 @@ $blue: #053651;
 $red: #CA0000;
 $black: #000;
 $white: #fff;
+$orange: #FF9900;
+$green: #5C8809;
+$grey: #B1BEC6;
 
 // == MIXINS == //
 
 @mixin headerTitle {
     font: {
-        size: 70px;
-        family: $mainFont;
-        weight: 400;
+        size: 40px;
+        family: $logoTitle;
+        weight: 600;
     }
 }
 
 @mixin highTitle {
     font: {
-        family: $mainFont;
+        family: $logoTitle;
         size: 40px;
-        weight: 400;
+        weight: 600;
     }
 }
 
@@ -38,7 +41,7 @@ $white: #fff;
     font: {
         family: $logoTitle;
         size: 20px;
-        weight: 600;
+        weight: 400;
     }   
 }
 
@@ -52,7 +55,7 @@ $white: #fff;
 
 // == WIDTH == //
 
-$mainWidth: 1370px;
+$mainWidth: 1390px;
 
 // == STYLES == //
 
@@ -303,11 +306,11 @@ body {
 // == HEADER CONTENT == //
 
 .line-cross {
-    height: 1px;
+    height: 2px;
     width: 100px;
     transform: translate(0, 5px);
     transition: .5s ease-in-out all;
-    background-color: $blue;
+    background-color: $red;
 }
 
 
@@ -391,6 +394,7 @@ main {
 
         .content {
             padding-left: 60px;
+            padding-right: 80px;
         }
 
         h1 {
@@ -430,7 +434,7 @@ main {
     .content {
         display: grid;
         justify-content: center;
-        grid-template-columns: 390px 390px 390px;
+        grid-template-columns: 450px 450px 450px;
 
         .item-content {
             height: 320px;
@@ -440,7 +444,7 @@ main {
         .title {
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
-            max-width: 80%;
+            max-width: 410px;
             margin: 0 auto;
             background-color: $white;
             text-align: center;
@@ -474,10 +478,310 @@ main {
         }
     }
 
+    .feature-info {
+        display: flex;
+        justify-content: $spaceBetween;
+        margin: 0 auto;
+        align-items: center;
+        min-width: 1000px;
+        width: 1000px;
+        margin-bottom: 30px;
+
+        .info-card {
+            display: flex;
+            align-items: center;
+            min-width: 480px;
+            width: 480px;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: 5px -3px 30px rgb(0 0 0 / 10%);
+
+            p {
+                text-align: center;
+                @include infoTitle();
+            }
+        }
+    }
+
     .cards {
         display: flex;
         justify-content: $spaceBetween;
     }
+
+    .structure-block {
+        padding-top: 75px;
+        span {
+            color: $blue;
+        }
+        position: relative;
+
+        h3 {
+            @include highTitle();
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .structure-main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .info-structure {
+            display: flex;
+            flex-direction: column;
+            justify-content: $spaceBetween;
+            padding-left: 35px;
+
+            &.second {
+                justify-content: inherit;
+            }
+
+            .sub-title-block {
+                padding-left: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 435px;
+
+                .circle {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: $red;
+                }
+
+                .line {
+                    width: 30px;
+                    height: 2px;
+                    background: $blue;
+                }
+
+                &.down-subtitle {
+                    max-width: 320px
+                }
+
+                &.second-title {
+                    padding-top: 15px;
+                }
+            }
+
+            .mini-title {
+                @include highTitle();
+                font-size: 15px;
+                padding-top: 0;
+                line-height: 15px;
+                max-width: 640px;
+            }
+
+            h4 {
+                @include highTitle();
+                font-size: 20px;
+            }
+
+            p {
+                @include infoTitle();
+            }
+        }
+
+        .absolute-img {
+            position: absolute;
+            right: 0;
+
+            &.logo-img {
+                bottom: 30px;
+            }
+
+            &.graph-img {
+                bottom: -30px;
+                right: 20px;
+            }
+        }
+
+        // graphs
+
+        .main-graphs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .second-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .numbers {
+                    p {
+                        margin-left: 26px !important;
+                    }
+                }
+
+                .line {
+                    .line-green {
+                        width: 150px;
+                    }
+                }
+
+                .blocks-graph {
+                    margin-left: 0 !important;
+                }
+
+                .line {
+                    transform: translateX(20px) !important;
+                }
+
+                .graph {
+                    height: 40%;
+                }
+
+                .down-title {
+                    p {
+                        span {
+                            color: $green !important;
+                        }
+                    }
+                }
+            }
+            
+            .graph-block {
+                max-width: 630px;
+                width: 640px;
+                padding: 30px;
+                max-width: 640px;
+                border-radius: 0px 0px 30px 30px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+
+                .tenis-img {
+                    position: absolute;
+                    right: 30px;
+                }
+
+                .title {
+                    h4 {
+                        @include highTitle();
+                        font-size: 20px;
+                        max-width: 280px;
+                    }
+                }
+
+                .sub-title {
+                    p {
+                        @include highTitle();
+                        font-size: 10px;
+                    }
+                    padding-top: 25px;
+                }
+
+                .line {
+                    transform: translateX(80px);
+                    padding-top: 10px;
+                }
+
+                .down-title {
+                    padding-top: 5px;
+                    p {
+                        @include infoTitle();
+                        span {
+                            color: $orange
+                        }
+                    }
+                }
+
+                .graph {
+                    p {
+                        @include highTitle();
+                        font-size: 10px;
+                    }
+                    display: flex;
+                    padding-top: 10px;
+
+                    .heigt-nums {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                    }
+
+                    .blocks-graph {
+                        display: flex;
+                        align-items: flex-end;
+                        max-width: 150px;
+                        width: 150px;
+                        justify-content: space-between;
+                        margin-left: 60px;
+
+                        .stat-block {
+                            width: 22px;
+                        }
+
+                        .orange {
+                            background: $orange;
+
+                            &.first {
+                                height: 45px;
+                            }
+
+                            &.second {
+                                height: 130px;
+                            }
+
+                            &.third {
+                                height: 240px;
+                            }
+
+                            &.four {
+                                height: 216px;
+                            }
+
+                            &.five {
+                                height: 76px;
+                            }
+                        }
+
+                        .green {
+                            background: $green;
+
+                            &.first {
+                                height: 45px;
+                            }
+
+                            &.second {
+                                height: 79px;
+                            }
+
+                            &.third {
+                                height: 134px;
+                            }
+
+                            &.four {
+                                height: 144px;
+                            }
+
+                            &.five {
+                                height: 58px;
+                            }
+                        }
+                    }
+                }
+                .numbers {
+                    display: flex;
+                    max-width: 225px;
+                    width: 225px;
+                    padding-top: 10px;
+                    p {
+                        @include highTitle();
+                        font-size: 10px;
+                        color: $grey;
+                        margin-left: 25px;
+                    }
+                    max-width: 150px;
+                    width: 150px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }    
 }
 
 // == SCHOLARSHIP == //
@@ -486,20 +790,15 @@ main {
 
     .content {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: $spaceBetween;
 
         .tennis {
             max-width: 660px;
             box-shadow: 5px -3px 30px rgb(0 0 0 / 10%);
-            padding: 45px 35px;
 
             display: flex;
             align-items: center;
-
-            img {
-                padding-right: 40px;
-            }
 
             .contact-btn {
                 margin-top: 20px;
@@ -534,10 +833,22 @@ main {
         }
 
         .team {
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: $spaceBetween;
+            align-items: center;
+            .team-title {
+                border: 5px solid $blue;
+                border-radius: 30px;
+                width: 800px;
+                margin-top: 30px;
+            }
             h3 {
                 color: $blue;
                 @include infoMain;
                 text-align: center;
+                padding: 30px 45px;
             }
 
             .titles {
