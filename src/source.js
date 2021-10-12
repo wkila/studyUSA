@@ -27,18 +27,31 @@ window.addEventListener("scroll", coordHandler)
 
 function coordHandler(event) {
     currentPos = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
+    console.log(currentPos)
 
-    document.querySelectorAll(".nav-link").forEach(element => {
+    document.querySelectorAll(".link-item-header").forEach(element => {
         let href = element.getAttribute('href').substring(1)
         if (href != undefined && href != null) {
             let item = document.getElementById(href)
             if (item != null) {
-                let coord = item.getBoundingClientRect().top
-                if (currentPos / 4 > coord) {
+                let coord = (item.getBoundingClientRect().top).toFixed(0)
+                if (currentPos / 6 > coord && !item.classList.contains("scrolled")) {
                     const activeLink = element
                     const widthActive = activeLink.getBoundingClientRect().width
                     
                     if (item.getAttribute("ID") === href) {
+                        item.classList.add("scrolled")
+                        line.style.width = `${widthActive}px`
+
+                        const width = activeLink.offsetLeft - line.offsetLeft
+                        line.style.transform = `translate(${width}px, 5px)`
+                    }
+                }else if((coord * (-1)) < 50 && item.classList.contains("scrolled")) {
+                    const activeLink = element
+                    const widthActive = activeLink.getBoundingClientRect().width
+                    
+                    if (item.getAttribute("ID") === href) {
+                        item.classList.remove("scrolled")
                         line.style.width = `${widthActive}px`
 
                         const width = activeLink.offsetLeft - line.offsetLeft
@@ -107,6 +120,7 @@ function switcherLine(event) {
     const widthActive = activeLink.getBoundingClientRect().width
 
     if (activeLink.nodeName === 'A') {
+        slowScroll(activeLink)
         line.style.width = `${widthActive}px`
 
         const width = activeLink.offsetLeft - line.offsetLeft
@@ -129,6 +143,7 @@ function slowScroll(link) {
 
     const scrollTarget = document.getElementById(href)
     const elementPosition = scrollTarget.getBoundingClientRect().top
+    console.log(elementPosition, href)
 
     if (currentPos === 0) {
         currentPos = elementPosition
