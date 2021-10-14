@@ -4,15 +4,24 @@ const burger = document.getElementById("burger"),
     itemsBurger = document.querySelectorAll(".item-burger"),
     submitBtn = document.querySelector(".submit-btn-form"),
     body = document.querySelector("body"),
-    contactForm = document.querySelector(".contact-form"),
+    contactForm = document.querySelector(".first-form"),
+    secondForm = document.querySelector(".second-form"),
     links = document.querySelectorAll("li"),
     line = document.querySelector(".line-cross"),
     containerLins = document.querySelector(".nav-items"),
     tabBurgerMenu = document.querySelector(".tab-burger-menu"),
-    backgroundBlack = document.querySelector(".background-black")
+    backgroundBlack = document.querySelector(".background-black"),
+    animBlocks = document.querySelectorAll(".anim-handler")
 
 let currentPos = 0
 const navHeight = navContainer.offsetHeight
+const animClasses = {
+    "left": "left-anim",
+    "right": "right-anim",
+    "top": "top-anim",
+    "bottom": "bottom-anim",
+    "height": ""
+}
 
 line.style.width = `${links[0].getBoundingClientRect().width}px`
 line.style.transform = `translate(${links[0].offsetLeft - line.offsetLeft}px, 5px)`
@@ -60,6 +69,10 @@ function coordHandler(event) {
             }
         }
     })
+
+    animBlocks.forEach(element => {
+
+    }) 
 }
 
 function burgerClick(event) {
@@ -98,18 +111,35 @@ function tabClick(event) {
         tabMenu.classList.toggle("handleActive")
     }
 }
+let secondFormClick = false
+let firstFormClick = false
 
 function contactHandler(event) {
     let item = event.target
 
     if (item.classList.contains("contact-btn")) {
-        contactForm.style.display = "block"
-        contactForm.classList.toggle("activeContact")
+        if (item.classList.contains("second-form-btn")) {
+            secondForm.style.display = "block"
+            secondForm.classList.toggle("activeContact")
+            secondFormClick = true
+
+        }else {
+            contactForm.style.display = "block"
+            contactForm.classList.toggle("activeContact")
+            firstFormClick = true
+        }
 
     }else if (item.classList.contains("contact-form")){
-
-        contactForm.classList.toggle("activeContact")
-        contactForm.style.display = "none"
+        console.log("contact form", secondFormClick, firstFormClick)
+        if (firstFormClick) {
+            contactForm.classList.toggle("activeContact")
+            contactForm.style.display = "none"
+            firstFormClick = false
+        }else if(secondFormClick) {
+            secondForm.classList.toggle("activeContact")
+            secondForm.style.display = "none"
+            secondFormClick = false
+        }
     }
 }
 
@@ -156,10 +186,3 @@ function slowScroll(link) {
         behavior: 'smooth'
     })
 }
-
-
-
-
-
-
-

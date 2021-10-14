@@ -251,6 +251,7 @@ body {
 
     .high-title-block {
         padding-bottom: 45px;
+        padding-top: 40px;
 
         text-align: center;
 
@@ -752,22 +753,27 @@ main {
                             background: $orange;
 
                             &.first {
+                                max-height: 45px;
                                 height: 45px;
                             }
 
                             &.second {
+                                max-height: 130px;
                                 height: 130px;
                             }
 
                             &.third {
+                                max-height: 240px;
                                 height: 240px;
                             }
 
                             &.four {
+                                max-height: 216px;
                                 height: 216px;
                             }
 
                             &.five {
+                                max-height: 76px;
                                 height: 76px;
                             }
                         }
@@ -776,22 +782,27 @@ main {
                             background: $green;
 
                             &.first {
+                                max-height: 45px;
                                 height: 45px;
                             }
 
                             &.second {
+                               max-height: 79px;
                                 height: 79px;
                             }
 
                             &.third {
+                                max-height: 134px;
                                 height: 134px;
                             }
 
                             &.four {
+                                max-height: 144px;
                                 height: 144px;
                             }
 
                             &.five {
+                                max-height: 58px;
                                 height: 58px;
                             }
                         }
