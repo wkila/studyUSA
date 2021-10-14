@@ -1,0 +1,72 @@
+.left-handler {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.left-anim {
+    animation: leftScroll .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftScroll {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right-handler {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.right-anim {
+    animation: rightScroll .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightScroll {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.top-handler {
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.top-anim {
+    animation: rightScroll .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toptScroll {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bottom-handler {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.bottom-anim {
+    animation: rightScroll .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomtScroll {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+

@@ -136,6 +136,18 @@ select {
   .contact-form {
     left: 20%;
   }
+
+  .feature .graph-img {
+    bottom: -30px !important;
+    right: 261px !important;
+    max-width: 40% !important;
+  }
+  .feature .logo-img {
+    right: 240px !important;
+  }
+  .feature .racket-img {
+    right: 110px !important;
+  }
 }
 @media (max-width: 1395px) {
   .header-inner {
@@ -145,6 +157,10 @@ select {
   .header-wrapper {
     margin: 0 auto;
   }
+
+  .scholarship .team-title {
+    width: 680px !important;
+  }
 }
 @media (max-width: 1345px) {
   .header-inner {
@@ -153,6 +169,42 @@ select {
 
   .header-wrapper {
     margin: 0 auto;
+  }
+
+  .feature .graph-img {
+    max-width: 50% !important;
+    bottom: -30px !important;
+    right: 60px !important;
+  }
+}
+@media (max-width: 1336px) {
+  .feature .main-graphs {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+
+  .scholarship .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .scholarship .main-content .team {
+    padding-top: 0 !important;
+  }
+  .scholarship .main-content .team .btn-block {
+    margin-top: 15px !important;
+  }
+  .scholarship .main-content .team-title {
+    width: 800px !important;
+  }
+  .scholarship .main-content .team-title img {
+    display: none;
   }
 }
 @media (max-width: 1280px) {
@@ -170,9 +222,36 @@ select {
     white-space: nowrap;
   }
   .feature img {
-    max-width: 40%;
     padding-bottom: 10px;
     margin-right: 10px;
+  }
+  .feature .structure-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feature .structure-main img {
+    margin-right: 0 !important;
+  }
+  .feature .structure-main .racket-img {
+    max-width: 10% !important;
+    top: 230px !important;
+    right: 670px !important;
+  }
+  .feature .structure-main .graph-img {
+    max-width: 50% !important;
+    bottom: -220px !important;
+    right: 320px !important;
+  }
+  .feature .structure-main .logo-img {
+    bottom: -150px !important;
+  }
+  .feature .graphs-block {
+    padding-top: 250px !important;
   }
 
   .service .cards {
@@ -267,8 +346,16 @@ select {
     -ms-grid-columns: 250px 250px 250px !important;
     grid-template-columns: 250px 250px 250px !important;
   }
+
+  header .contact-btn {
+    margin-right: 0 !important;
+  }
 }
 @media (max-width: 980px) {
+  .feature .info-card {
+    width: 450px !important;
+  }
+
   .team-project .content {
     overflow-x: scroll;
     width: auto;
@@ -286,6 +373,10 @@ select {
 
   header .contact-btn {
     padding: 12px 5px !important;
+  }
+
+  .scholarship .subtitle-block {
+    width: 450px !important;
   }
 }
 @media (max-width: 975px) {
@@ -307,6 +398,92 @@ select {
   }
 }
 @media (max-width: 770px) {
+  .header-inner {
+    height: 100vh !important;
+  }
+
+  .feature .structure-main .racket-img {
+    max-width: 25% !important;
+    top: 180px !important;
+    right: 427px !important;
+  }
+
+  .mini-title-block .line {
+    margin-left: -20px;
+  }
+  .mini-title-block .mini-title {
+    padding-left: 10px !important;
+  }
+
+  .join-univ .item-collection {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .feature .feature-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature .feature-info .info-card {
+    margin-top: 10px !important;
+  }
+  .feature .structure-main {
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+  }
+  .feature .structure-main h4 {
+    padding: 10px 0;
+  }
+  .feature .structure-main .graph-img {
+    max-width: 100% !important;
+    bottom: -260px !important;
+    right: 0 !important;
+  }
+  .feature .structure-main .logo-img {
+    bottom: -200px !important;
+    right: 30px !important;
+  }
+  .feature .structure-main .sub-title-block {
+    width: 465px !important;
+    padding-top: 5px !important;
+  }
+  .feature .structure-main .structure-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature .structure-main .structure-img .mini-title {
+    margin: 0 auto !important;
+    max-width: 550px !important;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .feature .structure-main .info-structure {
+    padding: 10px 0 !important;
+  }
+
   .mainSection h2 {
     font-size: 25px !important;
   }
@@ -322,12 +499,18 @@ select {
         -ms-flex-pack: center !important;
             justify-content: center !important;
     text-align: center;
+    background: no-repeat url("img/bgphone.jpg") !important;
   }
   .header-inner .card-info {
     border-radius: 30px;
+    padding: 15px;
   }
   .header-inner .card-info .content {
     padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .header-inner .card-info .content .default-title {
+    margin: 0 auto;
   }
 
   .about-us img {
@@ -335,7 +518,7 @@ select {
   }
 
   .feature img {
-    max-width: inherit;
+    max-width: 100%;
   }
 
   .join-univ .content {
@@ -355,15 +538,23 @@ select {
     -ms-grid-column-span: 1 !important;
     grid-column-end: 3 !important;
   }
-  .join-univ .content .__two {
-    -ms-grid-column: 1 !important;
-        grid-column-start: 1 !important;
-    -ms-grid-column-span: 2 !important;
-    grid-column-end: 3 !important;
-    -ms-grid-row: 2 !important;
-        grid-row-start: 2 !important;
+  .join-univ .content .__three {
+    background: no-repeat url(img/five_phone.jpg) !important;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
     max-width: inherit !important;
-    background: no-repeat url("img/long_four.jpg") !important;
+  }
+  .join-univ .content .__three .title {
+    border-radius: 0;
+    max-width: inherit;
+    width: 100%;
+  }
+  .join-univ .content .__three .title h3 {
+    max-width: inherit;
   }
 
   header {
@@ -404,6 +595,48 @@ select {
   footer .nav-items, footer button {
     display: none;
   }
+
+  .scholarship .main-content .team-title {
+    width: 670px !important;
+  }
+  .scholarship .main-content .team-title h3 {
+    font-size: 16px !important;
+  }
+  .scholarship .under-blocks .subtitle-block {
+    width: 362px !important;
+  }
+  .scholarship .under-blocks .subtitle-block p {
+    font-size: 17px !important;
+  }
+  .scholarship .under-blocks .subtitle-block .mini-subtitle {
+    max-width: 240px !important;
+    margin: 0 auto !important;
+  }
+  .scholarship .under-blocks .subtitle-block .row-titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 362px !important;
+  }
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.first_title {
+    border-radius: 0 !important;
+    padding: 0 !important;
+    -webkit-box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25) !important;
+            box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25) !important;
+  }
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    -webkit-transform: translateY(-5px) !important;
+            transform: translateY(-5px) !important;
+    padding: 0 !important;
+    width: 280px !important;
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 700px) {
   .contact-form .info-form {
@@ -433,9 +666,51 @@ select {
     width: 500px;
   }
 }
+@media (max-width: 665px) {
+  .feature .graph-block {
+    width: 500px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .feature .graph-block .second-block {
+    width: 280px !important;
+  }
+  .feature .graph-block .tenis-img {
+    width: 150px !important;
+    top: 100px !important;
+  }
+
+  .scholarship .main-content .team-title {
+    width: 600px !important;
+  }
+  .scholarship .main-content .team-title h3 {
+    padding: 30px 15px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 322px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 312px !important;
+  }
+}
 @media (max-width: 630px) {
   .contact-form .info-form {
     width: 95% !important;
+  }
+
+  .scholarship .main-content .team-title {
+    width: 520px !important;
+  }
+  .scholarship .main-content .team-title h3 {
+    padding: 30px 5px !important;
+    font-size: 15px !important;
   }
 }
 @media (max-width: 595px) {
@@ -452,8 +727,11 @@ select {
     grid-template-columns: 240px 240px !important;
   }
 
+  .mainSection {
+    padding: 0 10px !important;
+  }
+
   .scholarship .tennis {
-    padding: 45px 45px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -468,6 +746,43 @@ select {
   .scholarship .tennis img {
     padding-right: 0 !important;
   }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 264px !important;
+  }
+  .scholarship .under-blocks .subtitle-block p {
+    font-size: 12px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .mini-subtitle {
+    max-width: 220px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 264px !important;
+  }
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block p {
+    font-size: 12px !important;
+  }
+
+  .header-inner h1 {
+    max-width: 250px !important;
+    font-size: 25px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 568px) {
+  .scholarship .under-blocks .subtitle-block {
+    width: 260px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 260px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    width: 260px !important;
+  }
 }
 @media (max-width: 565px) {
   .contact-form-block {
@@ -477,6 +792,52 @@ select {
 @media (max-width: 520px) {
   .header-inner .content {
     width: 400px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 230px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 230px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    width: 230px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 220px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 220px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    width: 220px !important;
+  }
+
+  .scholarship .main-content .team-title {
+    width: 100% !important;
+  }
+}
+@media (max-width: 495px) {
+  .feature .graph-block {
+    width: 400px !important;
+  }
+
+  .feature .graph-block .tenis-img {
+    width: 100px !important;
+  }
+}
+@media (max-width: 485px) {
+  .feature .structure-block .main-graphs .graph-block {
+    width: 450px !important;
+  }
+
+  .feature .graph-block .tenis-img {
+    width: 100px !important;
   }
 }
 @media (max-width: 485px) {
@@ -505,6 +866,10 @@ select {
   }
   .contact-form input::placeholder {
     font-size: 12px !important;
+  }
+
+  .feature .structure-main .sub-title-block {
+    width: 425px !important;
   }
 }
 @media (max-width: 460px) {
@@ -535,6 +900,14 @@ select {
   .contact-form input::placeholder {
     font-size: 10px !important;
   }
+
+  .feature .structure-block .main-graphs .graph-block {
+    width: 380px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block .tenis-img {
+    width: 80px !important;
+  }
 }
 @media (max-width: 450px) {
   .header-inner .content {
@@ -550,6 +923,22 @@ select {
     font-size: 18px;
     padding: 0 10px !important;
   }
+
+  .feature .info-card {
+    width: 390px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 180px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    width: 180px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 180px !important;
+  }
 }
 @media (max-width: 440px) {
   .join-univ .content {
@@ -559,6 +948,46 @@ select {
 
   .about-us .content {
     text-align: center;
+  }
+
+  .feature .structure-main .sub-title-block {
+    width: 355px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block .line {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header-inner .typing-title {
+    padding: 5px 0 !important;
+  }
+
+  .header-inner .card-info .contact-btn {
+    margin: 30px 0 0 0 !important;
+  }
+
+  .header-inner .content .default-title {
+    font-size: 15px !important;
+  }
+
+  .header-inner .card-info h1 {
+    font-size: 25px !important;
+    padding-top: 15px !important;
+  }
+}
+@media (max-width: 420px) {
+  .header-inner .card-info .content .default-title {
+    padding: 0 !important;
+  }
+
+  .header-inner .content {
+    width: 350px !important;
   }
 }
 @media (max-width: 400px) {
@@ -580,6 +1009,37 @@ select {
   }
   .contact-form input::placeholder {
     font-size: 10px !important;
+  }
+
+  .feature .info-card {
+    width: 340px !important;
+  }
+  .feature .info-card p {
+    font-size: 12px !important;
+  }
+
+  .header-inner .content {
+    width: 310px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block {
+    width: 150px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+    width: 150px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    width: 150px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block {
+    width: 320px !important;
+  }
+
+  .feature .structure-main .sub-title-block {
+    width: 275px !important;
   }
 }
 @media (max-width: 360px) {
@@ -626,6 +1086,131 @@ select {
   }
   .contact-form input::placeholder {
     font-size: 10px !important;
+  }
+}
+@media (max-width: 340px) {
+  .feature .info-card {
+    width: 300px !important;
+  }
+
+  .header-inner .content {
+    width: 280px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block .line {
+    max-width: 120px !important;
+  }
+}
+.left-handler {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+
+.left-anim {
+  -webkit-animation: leftScroll 0.3s ease-in;
+          animation: leftScroll 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes leftScroll {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes leftScroll {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.right-handler {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+}
+
+.right-anim {
+  -webkit-animation: rightScroll 0.3s ease-in;
+          animation: rightScroll 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rightScroll {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rightScroll {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.top-handler {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+
+.top-anim {
+  -webkit-animation: rightScroll 0.3s ease-in;
+          animation: rightScroll 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes toptScroll {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toptScroll {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.bottom-handler {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+}
+
+.bottom-anim {
+  -webkit-animation: rightScroll 0.3s ease-in;
+          animation: rightScroll 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bottomtScroll {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomtScroll {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 body {
@@ -778,9 +1363,13 @@ header {
   overflow: hidden !important;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 header .logo {
   margin-left: 30px;
+}
+header .contact-btn {
+  margin-right: 30px;
 }
 
 body {
@@ -908,6 +1497,27 @@ body {
   padding: 0 7px;
 }
 
+.mini-title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+.mini-title-block .mini-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 60px;
+}
+.mini-title-block .line {
+  width: 119px;
+  height: 10px;
+  background: #053651;
+}
+
 main {
   padding-top: 30px;
 }
@@ -1009,8 +1619,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 1000px;
-  width: 1000px;
+  max-width: 1000px;
   margin-bottom: 30px;
 }
 .feature .feature-info .info-card {
@@ -1020,12 +1629,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 480px;
+  max-width: 680px;
   width: 480px;
   border-radius: 30px;
   padding: 30px;
   -webkit-box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
+  background: black;
+  color: white;
 }
 .feature .feature-info .info-card p {
   text-align: center;
@@ -1053,7 +1664,6 @@ main {
   font-size: 40px;
   font-weight: 600;
   font-size: 30px;
-  padding-bottom: 30px;
 }
 .feature .structure-block .structure-main {
   display: -webkit-box;
@@ -1061,6 +1671,15 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.feature .structure-block .structure-main .mini-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 0;
+  line-height: 15px;
+  max-width: 640px;
 }
 .feature .structure-block .info-structure {
   display: -webkit-box;
@@ -1085,13 +1704,16 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 435px;
+  max-width: 465px;
+}
+.feature .structure-block .info-structure .sub-title-block .sub-title {
+  padding-left: 11px;
 }
 .feature .structure-block .info-structure .sub-title-block .circle {
   width: 10px;
@@ -1109,15 +1731,6 @@ main {
 }
 .feature .structure-block .info-structure .sub-title-block.second-title {
   padding-top: 15px;
-}
-.feature .structure-block .info-structure .mini-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  font-size: 15px;
-  padding-top: 0;
-  line-height: 15px;
-  max-width: 640px;
 }
 .feature .structure-block .info-structure h4 {
   font-family: "Montserrat", sans-serif;
@@ -1333,7 +1946,124 @@ main {
   margin-left: 25px;
 }
 
+.scholarship .sorts-grants .main-title {
+  background: #053651;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+}
+.scholarship .sorts-grants .main-title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 30px;
+  padding: 23px 0;
+}
+.scholarship .sorts-grants .under-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.scholarship .sorts-grants .subtitle-block {
+  max-width: 650px;
+  width: 650px;
+}
+.scholarship .sorts-grants .subtitle-block .subtitle {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
+  padding: 13px 0;
+  width: 100%;
+  text-align: center;
+}
+.scholarship .sorts-grants .subtitle-block .subtitle .high-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.scholarship .sorts-grants .subtitle-block .subtitle p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.scholarship .sorts-grants .subtitle-block .row-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.scholarship .sorts-grants .subtitle-block .row-titles .second-block {
+  max-width: 530px;
+  width: 530px;
+}
+.scholarship .sorts-grants .subtitle-block .row-titles .second-block p {
+  max-width: 600px;
+}
+.scholarship .sorts-grants .subtitle-block .subsub-title-block {
+  max-width: 300px;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
+  padding: 13px 0;
+  margin-top: 15px;
+  max-height: 500px;
+  height: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.scholarship .sorts-grants .subtitle-block .subsub-title-block .high-title {
+  color: #053651;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.scholarship .sorts-grants .subtitle-block .subsub-title-block p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.scholarship .sorts-grants .subtitle-block .subsub-title-block p.second-title {
+  max-width: 300px;
+}
+.scholarship .sorts-grants .subtitle-block .subsub-title-block .high-block-info {
+  max-width: 530px;
+  width: 530px;
+  margin: 0 auto;
+}
 .scholarship .content {
+  margin-top: 70px;
+}
+.scholarship .content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.scholarship .content .main-content {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1396,6 +2126,12 @@ main {
   border-radius: 30px;
   width: 800px;
   margin-top: 30px;
+  position: relative;
+}
+.scholarship .content .team .team-title img {
+  position: absolute;
+  left: 40%;
+  top: -134px;
 }
 .scholarship .content .team h3 {
   color: #053651;
