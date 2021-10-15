@@ -417,6 +417,7 @@ select {
 
   .join-univ .item-collection {
     height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -426,6 +427,9 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .join-univ .item-collection .title {
+    border-radius: 0 !important;
   }
 
   .feature .feature-info {
@@ -522,8 +526,8 @@ select {
   }
 
   .join-univ .content {
-    -ms-grid-columns: 390px 290px !important;
-    grid-template-columns: 390px 290px !important;
+    -ms-grid-columns: 340px 340px !important;
+    grid-template-columns: 340px 340px !important;
   }
   .join-univ .content h3 {
     font-size: 14px !important;
@@ -537,6 +541,16 @@ select {
         grid-column-start: 2 !important;
     -ms-grid-column-span: 1 !important;
     grid-column-end: 3 !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .join-univ .content .__one .title {
+    border-radius: 0 0 5px 5px !important;
+    width: 90% !important;
+  }
+  .join-univ .content .__two .title {
+    border-radius: 3px 3px 0px 0px !important;
   }
   .join-univ .content .__three {
     background: no-repeat url(img/five_phone.jpg) !important;
@@ -552,9 +566,21 @@ select {
     border-radius: 0;
     max-width: inherit;
     width: 100%;
+    min-height: 52px !important;
   }
   .join-univ .content .__three .title h3 {
     max-width: inherit;
+  }
+  .join-univ .content .__four {
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
+  .join-univ .content .__four .title {
+    border-radius: 5px 5px 0 0 !important;
+  }
+  .join-univ .content .__five .title {
+    border-radius: 0px 0px 5px 5px !important;
   }
 
   header {
@@ -1608,14 +1634,16 @@ main {
 .join-univ .content .item-content {
   height: 320px;
   max-width: 454px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .join-univ .content .title {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   max-width: 410px;
   margin: 0 auto;
   background-color: #fff;
   text-align: center;
+  width: 90%;
   padding: 12px 5px;
 }
 .join-univ .content .title h3 {
@@ -2251,9 +2279,13 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.service .cards .card {
+.service .cards .item-card {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin: 10px;
+}
+.service .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2266,6 +2298,7 @@ main {
           justify-content: space-between;
   padding: 10px 50px;
   min-height: 600px;
+  border-radius: 30px;
 }
 .service .cards .card .main-info {
   padding-top: 40px;
@@ -2400,6 +2433,8 @@ main {
   text-align: center;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  max-height: 230px;
 }
 .entrance-new .cards .card-consultations .high-title {
   font-family: "Montserrat", sans-serif;
@@ -2417,7 +2452,17 @@ main {
   padding: 30px 0;
 }
 .entrance-new .cards .card-consultations .default {
-  padding: 0 50px 70px 80px;
+  padding: 30px 50px 30px 80px;
+  position: relative;
+}
+.entrance-new .cards .card-consultations .default::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  background-color: #CA0000;
+  height: 1px;
+  top: 42px;
+  left: 40px;
 }
 
 .about-us .content {
@@ -2641,7 +2686,7 @@ footer .line {
   width: 100%;
   height: 100vh;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;

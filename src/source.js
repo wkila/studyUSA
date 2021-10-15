@@ -1,3 +1,6 @@
+
+// rabotaet - ne trogai
+
 const burger = document.getElementById("burger"),
     tabMenu = document.querySelector(".tab-bar"),
     navContainer = document.querySelector("nav"),
@@ -43,9 +46,10 @@ function coordHandler(event) {
             let item = document.getElementById(href)
             if (item != null) {
                 let coord = (item.getBoundingClientRect().top).toFixed(0)
-                if (currentPos / 6 > coord && !item.classList.contains("scrolled")) {
+                if (currentPos / 4 > coord && !item.classList.contains("scrolled") && coord < 50) {
                     const activeLink = element
                     const widthActive = activeLink.getBoundingClientRect().width
+                    console.log(coord, currentPos / 4, item)
                     
                     if (item.getAttribute("ID") === href) {
                         item.classList.add("scrolled")

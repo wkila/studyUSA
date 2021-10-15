@@ -12,7 +12,6 @@
 
     .header-inner {
         justify-content: center;
-        // height: 1000000px;
     }
 }
 
@@ -407,9 +406,14 @@
     .join-univ {
         .item-collection {
             height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .title {
+                border-radius: 0 !important;
+            }
         }
     }
 
@@ -517,7 +521,7 @@
 
     .join-univ {
         .content {
-            grid-template-columns: 390px 290px !important;
+            grid-template-columns: 340px 340px !important;;
             h3 {
                 font-size: 14px !important;
             }
@@ -527,6 +531,18 @@
                 grid-row-end: 2 !important;
                 grid-column-start: 2 !important;
                 grid-column-end: 3 !important;
+                align-items: flex-start !important;
+
+                .title {
+                    border-radius: 0 0 5px 5px !important;
+                    width: 90% !important;
+                }
+            }
+
+            .__two {
+                .title {
+                    border-radius: 3px 3px 0px 0px !important;
+                }
             }
 
             .__three {
@@ -540,10 +556,25 @@
                     border-radius: 0;
                     max-width: inherit;
                     width: 100%;
+                    min-height: 52px !important;
 
                     h3 {
                         max-width: inherit;
                     }
+                }
+            }
+
+            .__four {
+                align-items: flex-end !important;
+
+                .title {
+                    border-radius: 5px 5px 0 0 !important;
+                }
+            }
+
+            .__five {
+                .title {
+                    border-radius: 0px 0px 5px 5px !important;
                 }
             }
         }
