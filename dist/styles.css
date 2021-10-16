@@ -2767,6 +2767,9 @@ main {
 .feature .graph-block .graph-block .open-graph .tennis-girl.boy-tennis {
   width: 95px !important;
 }
+.feature .graph-block .boy-graph-tennis .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats-numbers {
+  margin-left: 4px;
+}
 .feature .high-title-block p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
