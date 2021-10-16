@@ -46,10 +46,10 @@ function coordHandler(event) {
             let item = document.getElementById(href)
             if (item != null) {
                 let coord = (item.getBoundingClientRect().top).toFixed(0)
-                if (currentPos / 4 > coord && !item.classList.contains("scrolled") && coord < 50) {
+                console.log(item, currentPos / 4, coord)
+                if (currentPos / 4 > coord && !item.classList.contains("scrolled") && coord < 210) {
                     const activeLink = element
                     const widthActive = activeLink.getBoundingClientRect().width
-                    console.log(coord, currentPos / 4, item)
                     
                     if (item.getAttribute("ID") === href) {
                         item.classList.add("scrolled")
@@ -58,7 +58,7 @@ function coordHandler(event) {
                         const width = activeLink.offsetLeft - line.offsetLeft
                         line.style.transform = `translate(${width}px, 5px)`
                     }
-                }else if((coord * (-1)) < 50 && item.classList.contains("scrolled")) {
+                }else if((coord * (-1)) < 210 && item.classList.contains("scrolled")) {
                     const activeLink = element
                     const widthActive = activeLink.getBoundingClientRect().width
                     
