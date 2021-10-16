@@ -1773,12 +1773,6 @@ select {
     width: 100%;
     padding: 0 !important;
   }
-  .join-univ .content .item-content.__one {
-    background: no-repeat center url("img/students-one-phone.png") !important;
-  }
-  .join-univ .content .item-content.__two {
-    background: no-repeat center url("img/students-five-phone.png") !important;
-  }
   .join-univ .content .item-content.__three {
     -ms-grid-row: 1 !important;
         grid-row-start: 1 !important;
@@ -1788,7 +1782,6 @@ select {
         grid-column-start: 2 !important;
     -ms-grid-column-span: 1 !important;
     grid-column-end: 3 !important;
-    background: no-repeat center url("img/students-two-phone.png") !important;
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
@@ -1803,7 +1796,6 @@ select {
     grid-column-end: 2;
     -ms-grid-row: 3;
         grid-row-start: 3;
-    background: no-repeat center url("img/students-three-phone.png") !important;
   }
   .join-univ .content .item-content.__five {
     -ms-grid-column: 1;
@@ -1812,7 +1804,6 @@ select {
     grid-column-end: 3;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    background: no-repeat center url("img/students-six-phone.png") !important;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
