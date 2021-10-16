@@ -550,6 +550,290 @@ main {
         .phone-img {
             display: none;
         }
+
+        .main-graphs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .open-graph {
+            width: 100%;
+            margin: 10px auto 0 auto;
+            padding: 10px 2px 10px 2px;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 0px 1.85304px 1.85304px rgba(0, 0, 0, 0.25);
+            position: relative;
+
+            .tennis-girl {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 68px;
+            }
+        }
+
+        .full-graph {
+            h4 {
+                font: {
+                    size: 10px;
+                    weight: 600;
+                    family: $logoTitle;
+                }
+                max-width: 180px;
+            }
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            justify-content: space-between;
+
+            .graph-phone-tab {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                max-width: 100%;
+                width: 100%;
+
+                .foundament-tab {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 11px;
+
+                    .graph-stat {
+                        display: flex;
+                        height: 120px;
+
+                        .title-stat {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            justify-content: space-between;
+
+                            .players-title {
+                                width: 100%;
+                                p {
+                                    font: {
+                                        family: $logoTitle;
+                                        size: 7px;
+                                        weight: 600;
+                                    }
+                                }
+                                
+                                justify-content: center;
+                            }
+
+                            p {
+                                align-items: flex-end;
+                                font: {
+                                    size: 5px;
+                                    family: $logoTitle;
+                                    weight: 400;
+                                }
+                            }
+                        }
+
+                        .main-graph-stat {
+                            width: 100%;
+
+                            .stats {
+                                display: flex;
+                                align-items: flex-end;
+                                margin-left: 27px;
+                                .block-height {
+                                    width: 10px;
+                                    margin-right: 3px;
+
+                                    &.green {
+                                        background-color: $green;
+                                        &.one {
+                                            height: 20px;
+                                        }
+
+                                        &.two {
+                                            height: 36px;
+                                        }
+
+                                        &.three {
+                                            height: 62px;
+                                        }
+
+                                        &.four {
+                                            height: 66px;
+                                        }
+
+                                        &.five {
+                                            height: 26px;
+                                        }
+                                    }
+
+                                    &.orange {
+                                        background-color: $orange;
+
+                                        &.one {
+                                            height: 20px;
+                                        }
+
+                                        &.two {
+                                            height: 60px;
+                                        }
+
+                                        &.three {
+                                            height: 110px;
+                                        }
+
+                                        &.four {
+                                            height: 100px;
+                                        }
+
+                                        &.five {
+                                            height: 35px;
+                                        }
+                                    }
+                                }
+                            }
+                            .stats-numbers {
+                                display: flex;
+                                padding-top: 4px;
+
+                                p {
+                                    margin-right: 10px;
+                                    font: {
+                                        size: 5px;
+                                        family: $logoTitle;
+                                        weight: 400;
+                                    }
+                                    color: $grey;
+                                }
+                            }
+                        }
+                    }
+                    .graph-title {
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-end;
+                        .graph-line {
+                            p {
+                                font: {
+                                    size: 7px;
+                                    weight: 400;
+                                    family: $logoTitle;
+                                }
+                            }
+                            span {
+                                font-weight: 600 !important;
+                                font-family: $logoTitle !important;
+
+                                color: $orange !important;
+                            }
+                            img {
+                                padding-bottom: 2px !important;
+                                margin-right: 0 !important;
+                            }
+                        }
+                    }
+
+                    &.green-graph {
+
+                        .graph-stat {
+                            align-items: flex-end;
+                        }
+
+                        .title-stat {
+                            justify-content: space-between;
+                            height: 95px;
+
+                            p {
+                                margin-bottom: 18px;
+                            }
+                        }
+                        .main-graph-stat {
+                            display: flex !important;
+                            flex-direction: column !important;
+                            justify-content: flex-end !important;
+
+                            .stats {
+                                margin-left: 2px;
+                            }
+                        }
+                        .graph-title {
+                            justify-content: center;
+
+                            span {
+                                color: $green !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.boy-graph-tennis {
+                .main-graph-stat {
+                    .block-height {
+                        &.orange {
+                            &.one {
+                                height: 16px;
+                            }
+    
+                            &.two {
+                                height: 57px;
+                            }
+    
+                            &.three {
+                                height: 115px;
+                            }
+    
+                            &.four {
+                                height: 73px;
+                            }
+    
+                            &.five {
+                                height: 7px;
+                            }
+                        }
+                        &.green {
+                            &.one {
+                                height: 10px;
+                            }
+    
+                            &.two {
+                                height: 7px;
+                            }
+    
+                            &.three {
+                                height: 232px;
+                            }
+    
+                            &.four {
+                                height: 48px;
+                            }
+    
+                            &.five {
+                                height: 64px;
+                            }
+
+                            &.six {
+                                height: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .boy-graph-tennis .full-graph .graph-phone-tab .foundament-tab .graph-title {
+            width: 74% !important;
+
+            .graph-line {
+                margin-left: -10px;
+            }
+        }
+        .graph-block .open-graph .tennis-girl {
+            &.boy-tennis {
+                width: 95px !important;
+            }
+        }
     }
     .high-title-block {
         p {

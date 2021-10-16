@@ -39,7 +39,6 @@ window.addEventListener("scroll", coordHandler)
 
 function coordHandler(event) {
     currentPos = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
-
     document.querySelectorAll(".link-item-header").forEach(element => {
         let href = element.getAttribute('href').substring(1)
         if (href != undefined && href != null) {
@@ -73,10 +72,6 @@ function coordHandler(event) {
             }
         }
     })
-
-    animBlocks.forEach(element => {
-
-    }) 
 }
 
 function burgerClick(event) {
@@ -163,7 +158,6 @@ function switcherLine(event) {
 
 function navHandler(event) {
     event.preventDefault()
-
     let link = event.target
 
     if (link.classList.contains("link-item")) {

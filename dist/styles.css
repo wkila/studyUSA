@@ -1522,16 +1522,15 @@ select {
   }
 }
 @media (max-width: 420px) {
+  .feature .graph-block .open-graph {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
   .feature .structure-main .racket-img {
     top: 193px !important;
     right: 234px !important;
-  }
-
-  .feature .graph-block .phone-img {
-    display: block !important;
-  }
-  .feature .graph-block .desktop-graph {
-    display: none !important;
   }
 
   .scholarship .sorts-grants .subtitle-block .subsub-title-block {
@@ -1539,6 +1538,10 @@ select {
   }
   .scholarship .sorts-grants .subtitle-block .subsub-title-block.academ-title {
     height: 106px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block .desktop-graph {
+    display: none !important;
   }
 
   .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
@@ -2486,6 +2489,283 @@ main {
 
 .feature .graph-block .phone-img {
   display: none;
+}
+.feature .graph-block .main-graphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feature .graph-block .open-graph {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  padding: 10px 2px 10px 2px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 0px 1.85304px 1.85304px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1.85304px 1.85304px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.feature .graph-block .open-graph .tennis-girl {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 68px;
+}
+.feature .graph-block .full-graph {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feature .graph-block .full-graph h4 {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  max-width: 180px;
+}
+.feature .graph-block .full-graph .graph-phone-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 100%;
+  width: 100%;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 11px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .title-stat {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .title-stat .players-title {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .title-stat .players-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .title-stat p {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat {
+  width: 100%;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 27px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height {
+  width: 10px;
+  margin-right: 3px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green {
+  background-color: #5C8809;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green.one {
+  height: 20px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green.two {
+  height: 36px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green.three {
+  height: 62px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green.four {
+  height: 66px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.green.five {
+  height: 26px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange {
+  background-color: #FF9900;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange.one {
+  height: 20px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange.two {
+  height: 60px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange.three {
+  height: 110px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange.four {
+  height: 100px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats .block-height.orange.five {
+  height: 35px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats-numbers p {
+  margin-right: 10px;
+  font-size: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #B1BEC6;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-title .graph-line p {
+  font-size: 7px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-title .graph-line span {
+  font-weight: 600 !important;
+  font-family: "Montserrat", sans-serif !important;
+  color: #FF9900 !important;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-title .graph-line img {
+  padding-bottom: 2px !important;
+  margin-right: 0 !important;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .graph-stat {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .title-stat {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 95px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .title-stat p {
+  margin-bottom: 18px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .main-graph-stat {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .main-graph-stat .stats {
+  margin-left: 2px;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .graph-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feature .graph-block .full-graph .graph-phone-tab .foundament-tab.green-graph .graph-title span {
+  color: #5C8809 !important;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.orange.one {
+  height: 16px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.orange.two {
+  height: 57px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.orange.three {
+  height: 115px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.orange.four {
+  height: 73px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.orange.five {
+  height: 7px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.one {
+  height: 10px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.two {
+  height: 7px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.three {
+  height: 232px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.four {
+  height: 48px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.five {
+  height: 64px;
+}
+.feature .graph-block .full-graph.boy-graph-tennis .main-graph-stat .block-height.green.six {
+  height: 29px;
+}
+.feature .graph-block .boy-graph-tennis .full-graph .graph-phone-tab .foundament-tab .graph-title {
+  width: 74% !important;
+}
+.feature .graph-block .boy-graph-tennis .full-graph .graph-phone-tab .foundament-tab .graph-title .graph-line {
+  margin-left: -10px;
+}
+.feature .graph-block .graph-block .open-graph .tennis-girl.boy-tennis {
+  width: 95px !important;
 }
 .feature .high-title-block p {
   font-family: "Montserrat", sans-serif;

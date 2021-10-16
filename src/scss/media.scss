@@ -1731,18 +1731,13 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 420px) {
 
+    .feature .graph-block .open-graph {
+        display: flex !important;
+    }
+
     .feature .structure-main .racket-img {
         top: 193px !important;
         right: 234px !important;
-    }
-
-    .feature .graph-block {
-        .phone-img {
-            display: block !important;
-        }
-        .desktop-graph {
-            display: none !important;
-        }
     }
 
     .scholarship .sorts-grants .subtitle-block .subsub-title-block {
@@ -1750,6 +1745,12 @@ $mediaMiniTitle: 8px;
 
         &.academ-title {
             height: 106px !important;
+        }
+    }
+
+    .feature .structure-block .main-graphs .graph-block {
+        .desktop-graph {
+            display: none !important;
         }
     }
 
