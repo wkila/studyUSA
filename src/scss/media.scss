@@ -551,6 +551,26 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 770px) {
 
+    .scholarship .sorts-grants .subtitle-block .subtitle {
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+
+    .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.first_title {
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+
     .join-univ .content .item-content {
         background-size: cover !important;
     }
@@ -1702,6 +1722,27 @@ $mediaMiniTitle: 8px;
     .feature .structure-main .racket-img {
         top: 193px !important;
         right: 234px !important;
+    }
+
+    .feature .graph-block {
+        .phone-img {
+            display: block !important;
+        }
+        .desktop-graph {
+            display: none !important;
+        }
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+        min-height: 106px !important;
+
+        &.academ-title {
+            height: 106px !important;
+        }
+    }
+
+    .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+        transform: translateY(-24px) !important;
     }
 
     main {

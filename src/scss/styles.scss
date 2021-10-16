@@ -546,6 +546,11 @@ main {
 // == FEATURE == //
 
 .feature {
+    .graph-block {
+        .phone-img {
+            display: none;
+        }
+    }
     .high-title-block {
         p {
             font: {

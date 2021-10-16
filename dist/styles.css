@@ -586,6 +586,26 @@ select {
   }
 }
 @media (max-width: 770px) {
+  .scholarship .sorts-grants .subtitle-block .subtitle {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.first_title {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
   .join-univ .content .item-content {
     background-size: cover !important;
   }
@@ -1493,6 +1513,25 @@ select {
   .feature .structure-main .racket-img {
     top: 193px !important;
     right: 234px !important;
+  }
+
+  .feature .graph-block .phone-img {
+    display: block !important;
+  }
+  .feature .graph-block .desktop-graph {
+    display: none !important;
+  }
+
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+    min-height: 106px !important;
+  }
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block.academ-title {
+    height: 106px !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    -webkit-transform: translateY(-24px) !important;
+            transform: translateY(-24px) !important;
   }
 
   main .header-inner {
@@ -2433,6 +2472,9 @@ main {
   border-radius: 10px 10px 0px 0px;
 }
 
+.feature .graph-block .phone-img {
+  display: none;
+}
 .feature .high-title-block p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
