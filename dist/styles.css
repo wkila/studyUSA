@@ -1672,7 +1672,7 @@ select {
 }
 @media (max-width: 375px) {
   .entrance-new .head-info .item {
-    width: 82% !important;
+    width: 100% !important;
   }
 
   .entrance-new .cards .card .head-info .item p {
@@ -2657,6 +2657,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   padding-top: 4px;
+  margin-left: 4px;
 }
 .feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .main-graph-stat .stats-numbers p {
   margin-right: 10px;
