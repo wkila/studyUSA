@@ -73,6 +73,10 @@ $spaceBetween: space-between;
 
 // == HEADER == //
 
+.phone-block {
+    display: none;
+}
+
 body {
     position: relative;
 
@@ -466,30 +470,73 @@ main {
     .content {
         display: grid;
         justify-content: center;
-        grid-template-columns: 450px 450px 450px;
+        grid-template-columns: 1fr 1fr 1fr;
 
         .item-content {
+            max-height: 320px;
             height: 320px;
             max-width: 454px;
             display: flex;
-            
-        }
 
-        .title {
-            max-width: 410px;
-            margin: 0 auto;
-            background-color: $white;
-            text-align: center;
-            width: 90%;
-
-            padding: 12px 5px;
-
-            h3 {
+            .title {
+                max-width: 410px;
                 margin: 0 auto;
-                @include infoMain;
-                max-width: 340px;
-                span {
-                    color: $red;
+                background-color: $white;
+                text-align: center;
+                width: 90%;
+    
+                padding: 12px 5px;
+    
+                h3 {
+                    margin: 0 auto;
+                    @include infoMain();
+                    max-width: 340px;
+                    span {
+                        color: $red;
+                    }
+                }
+            }
+
+            &.__one {
+                background: no-repeat center url("img/students-one.png");
+                align-items: flex-start;
+                .title {
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+            &.__two {
+                background: no-repeat center url("img/students-four.png");
+                align-items: flex-start;
+                .title {
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+            &.__three {
+                background: no-repeat center url("img/students-three.png");
+                align-items: flex-end;
+                .title {
+                    border-radius: 10px 10px 0px 0px;
+                }
+
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                max-height: inherit;
+                height: inherit;
+            }
+            &.__four {
+                background: no-repeat center url("img/students-two.png");
+                align-items: flex-end;
+                .title {
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            &.__five {
+                background: no-repeat center url("img/students-five.jpg");
+                align-items: flex-end;
+                .title {
+                    border-radius: 10px 10px 0px 0px;
                 }
             }
         }
@@ -563,6 +610,24 @@ main {
                 line-height: 15px;
                 max-width: 640px;
             }
+
+            .default-phone {
+                text-align: center;
+                font: {
+                    weight: 400;
+                    size: 15px;
+                    family: $logoTitle;
+                }
+                span {
+                    color: $blue;
+                    font-weight: 600;
+                }
+
+            }
+
+            .mobile-img {
+                display: none;
+            }
         }
 
         .info-structure {
@@ -576,7 +641,7 @@ main {
             }
 
             .sub-title-block {
-                padding-left: 15px;
+                padding-left: 5px;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -678,12 +743,6 @@ main {
             }
             
             .graph-block {
-                max-width: 630px;
-                width: 640px;
-                padding: 30px;
-                max-width: 640px;
-                border-radius: 0px 0px 30px 30px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
@@ -854,7 +913,7 @@ main {
 
         .subtitle-block {
             max-width: 650px;
-            width: 650px;
+            width: 80%;
             .subtitle {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 0 0 30px 30px;
@@ -1150,6 +1209,18 @@ main {
             @include infoTitle;
             max-width: 930px;
             margin: 0 auto;
+        }
+    }
+
+    h3 {
+        font-weight: 600 !important;
+    }
+
+    .cards .card-consultations .default {
+        font: {
+            size: 15px;
+            weight: 400;
+            family: $logoTitle;
         }
     }
 
