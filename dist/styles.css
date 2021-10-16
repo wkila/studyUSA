@@ -361,6 +361,10 @@ select {
             flex-direction: row !important;
   }
 
+  .scholarship .content .main-content {
+    margin-top: inherit !important;
+  }
+
   .feature .structure-block .main-graphs {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -483,6 +487,10 @@ select {
   }
 }
 @media (max-width: 980px) {
+  .scholarship .content .main-content {
+    margin-top: 0 !important;
+  }
+
   .feature .structure-main .graph-img {
     max-width: 50% !important;
     bottom: -220px !important;
@@ -1258,6 +1266,10 @@ select {
     font-size: 12px !important;
   }
 
+  .scholarship .content {
+    margin-top: 30px !important;
+  }
+
   .entrance-new .head-info .item {
     width: 70% !important;
   }
@@ -1739,6 +1751,11 @@ select {
   }
 }
 @media (max-width: 340px) {
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    -webkit-transform: translateY(-18px) !important;
+            transform: translateY(-18px) !important;
+  }
+
   .feature .structure-main .absolute-img {
     right: 184px !important;
     top: 180px !important;
