@@ -1751,6 +1751,10 @@ select {
   }
 }
 @media (max-width: 340px) {
+  .join-univ .content .item-content .title h3 {
+    font-size: 10px !important;
+  }
+
   .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
     -webkit-transform: translateY(-18px) !important;
             transform: translateY(-18px) !important;
