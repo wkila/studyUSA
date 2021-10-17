@@ -76,12 +76,13 @@ function coordHandler(event) {
 
 function burgerClick(event) {
     let item = event.target
+    console.log('click')
     
-    if(item.classList.contains("burger") || item.classList.contains("line-burger") || item.classList.contains("burger-menu")) {
-        burger.classList.toggle("handleActive")
-        tabMenu.classList.toggle("handleActive")
-        backgroundBlack.classList.toggle("handleActive")
-    }
+    // if(item.classList.contains("burger") || item.classList.contains("line-burger") || item.classList.contains("burger-menu")) {
+    //     burger.classList.toggle("handleActive")
+    //     tabMenu.classList.toggle("handleActive")
+    //     backgroundBlack.classList.toggle("handleActive")
+    // }
 }
 
 function linkHandler(event) {
@@ -118,13 +119,15 @@ function contactHandler(event) {
 
     if (item.classList.contains("contact-btn")) {
         if (item.classList.contains("second-form-btn")) {
-            secondForm.style.display = "block"
+            secondForm.style.display = "flex"
             secondForm.classList.toggle("activeContact")
+            backgroundBlack.classList.toggle("handleActive")
             secondFormClick = true
 
         }else {
-            contactForm.style.display = "block"
+            contactForm.style.display = "flex"
             contactForm.classList.toggle("activeContact")
+            backgroundBlack.classList.toggle("handleActive")
             firstFormClick = true
         }
 
@@ -132,10 +135,12 @@ function contactHandler(event) {
         console.log("contact form", secondFormClick, firstFormClick)
         if (firstFormClick) {
             contactForm.classList.toggle("activeContact")
+            backgroundBlack.classList.toggle("handleActive")
             contactForm.style.display = "none"
             firstFormClick = false
         }else if(secondFormClick) {
             secondForm.classList.toggle("activeContact")
+            backgroundBlack.classList.toggle("handleActive")
             secondForm.style.display = "none"
             secondFormClick = false
         }
