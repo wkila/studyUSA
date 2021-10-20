@@ -12,7 +12,7 @@ $subFont: 'Caveat', cursive;
 $logoTitle: 'Montserrat', sans-serif;
 
 $mediaMain: 20px;
-$mediaTitle: 12px;
+$mediaTitle: 10px;
 $mediaSubtitle: 15px;
 $mediaPriceName: 12px;
 $mediaPrice: 15px;
@@ -23,6 +23,18 @@ $mediaMiniTitle: 8px;
         .card {
             max-width: 80% !important;
         }
+    }
+
+    .phone-block {
+        display: block !important;
+    }
+
+    .contact-form .radio-btn {
+        width: 10% !important;
+    }
+
+    .scholarship .sorts-grants .main-title h3{
+        font-size: 15px !important;
     }
 
     .header-inner {
@@ -49,7 +61,6 @@ $mediaMiniTitle: 8px;
     }
 
     .header-wrapper {
-        // max-width: 1550px !important;
         margin: 0 auto;
     }
 }
@@ -60,7 +71,6 @@ $mediaMiniTitle: 8px;
     }
 
     .header-wrapper {
-        // max-width: 1460px !important;
         margin: 0 auto;
     }
 }
@@ -71,7 +81,6 @@ $mediaMiniTitle: 8px;
     }
 
     .header-wrapper {
-        // max-width: 1370px !important;
         margin: 0 auto;
     }
 
@@ -312,7 +321,7 @@ $mediaMiniTitle: 8px;
 
 
 @media (max-width: 1131px) {
-    .header-wrapper {
+    header {
         nav {
             a {
                 font-size: 13px;
@@ -320,7 +329,7 @@ $mediaMiniTitle: 8px;
         }
 
         .logo {
-            margin-left: 0 !important;
+            margin-left: 30px !important;
         }
     }
 
@@ -559,6 +568,97 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 770px) {
 
+    .birthday-block {
+        input {
+            width: 30% !important;
+        }
+        justify-content: flex-start !important;
+        padding-top: 10px !important;
+        // align-items: flex-start !important;
+        // flex-direction: column !important;
+    }
+
+    .contact-form .info-male p {
+        width: 100% !important;
+    }
+
+    .contact-form-block {
+        .male-block {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+        }
+    }
+
+    .skills .item p {
+        font-size: 12px !important;
+    }
+
+    .entrance-new .cards .card-consultations .default {
+        font-size: 12px !important;
+    }
+
+    .about-us p {
+        font-size: 12px !important;
+    }
+
+    footer {
+        nav {
+            .logo {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .feature .cards {
+        .default-img {
+            display: none !important;
+        }
+
+        .phone-block {
+            width: 100% !important;
+        }
+    }
+
+    .margin-swiper {
+        margin: 0 auto !important;
+    }
+
+    .team-project {
+        display: none !important;
+    }
+
+    .service {
+        display: none !important;
+    }
+
+    .card-consultations {
+        margin-top: 10px !important;
+    }
+
+    .swiper {
+        // display: block !important;
+        visibility: visible !important;
+
+        .swiper-slide {
+            h3 {
+                padding-top: 10px !important;
+                font: {
+                    family: $logoTitle !important;
+                    weight: 600 !important;
+                    size: 12px !important;
+                }
+            }
+        }
+    }
+
+
+
+    .phone-btn-block {
+        display: block !important;
+        text-align: center;
+        padding-top: 30px !important;
+    }
+
     .scholarship .sorts-grants .subtitle-block .subtitle {
         border-bottom-right-radius: 10px !important;
         border-bottom-left-radius: 10px !important;
@@ -710,6 +810,7 @@ $mediaMiniTitle: 8px;
 
         h3 {
             font-size: 20px !important;
+            
         }
     }
 
@@ -919,67 +1020,6 @@ $mediaMiniTitle: 8px;
         }
     }
 
-    .join-univ {
-        .content {
-            // grid-template-columns: 340px 340px !important;;
-            // h3 {
-            //     font-size: 14px !important;
-            // }
-
-            // .__one {
-            //     grid-row-start: 1 !important;
-            //     grid-row-end: 2 !important;
-            //     grid-column-start: 2 !important;
-            //     grid-column-end: 3 !important;
-            //     align-items: flex-start !important;
-
-            //     .title {
-            //         border-radius: 0 0 5px 5px !important;
-            //         width: 90% !important;
-            //     }
-            // }
-
-            // .__two {
-            //     .title {
-            //         border-radius: 3px 3px 0px 0px !important;
-            //     }
-            // }
-
-            // .__three {
-            //     background: no-repeat url(img/five_phone.jpg) !important;
-            //     grid-row-start: 2;
-            //     grid-column-start: 1;
-            //     grid-column-end: 3;
-            //     max-width: inherit !important;
-
-            //     .title {
-            //         border-radius: 0;
-            //         max-width: inherit;
-            //         width: 100%;
-            //         min-height: 52px !important;
-
-            //         h3 {
-            //             max-width: inherit;
-            //         }
-            //     }
-            // }
-
-            // .__four {
-            //     align-items: flex-end !important;
-
-            //     .title {
-            //         border-radius: 5px 5px 0 0 !important;
-            //     }
-            // }
-
-            // .__five {
-            //     .title {
-            //         border-radius: 0px 0px 5px 5px !important;
-            //     }
-            // }
-        }
-    }
-
     header {
         position: fixed !important;
         width: 100% !important;
@@ -1082,8 +1122,20 @@ $mediaMiniTitle: 8px;
 }
 
 @media (max-width: 770px) {
+    .feature .graph-block .open-graph  {
+        display: none !important;
+    }
     .feature .structure-main .racket-img {
-        top: 220px !important;
+        top: 260px !important;
+    }
+
+    .skills .item {
+        justify-content: flex-start !important;
+
+        .mediaTitle {
+            margin: 0 !important;
+            padding-left: 10px !important;
+        }
     }
 
     .join-univ .content .item-content.__one {
@@ -1140,6 +1192,10 @@ $mediaMiniTitle: 8px;
             width: 90% !important;
     
             p {
+                font-size: 12px !important;
+            }
+
+            label {
                 font-size: 12px !important;
             }
         }
@@ -1218,7 +1274,7 @@ $mediaMiniTitle: 8px;
     }
 
     .scholarship .under-blocks .subtitle-block {
-        width: 100% !important;
+        width: 48% !important;
     }
 
     .scholarship .under-blocks .subtitle-block .row-titles .second-block {
@@ -1235,7 +1291,13 @@ $mediaMiniTitle: 8px;
         }
     }
 
-    
+    footer {
+        nav {
+            .logo {
+                margin-left: 0 !important;
+            }
+        }
+    }
 
     .scholarship .main-content .team-title {
         width: 100% !important;
@@ -1269,7 +1331,7 @@ $mediaMiniTitle: 8px;
     // }
 
     .mainSection {
-        padding: 0 10px !important;
+        padding: 0 15px !important;
     }
 
     .scholarship {
@@ -1340,9 +1402,18 @@ $mediaMiniTitle: 8px;
     .scholarship .sorts-grants .subtitle-block .mini-subtitle {
         max-width: 170px !important;
     }
+    .phone-block {
+        display: block !important;
+    }
 }
 
 @media (max-width: 520px){
+// here
+    
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block p  {
+        font-size: $mediaMiniTitle !important;
+    }
 
     .header-inner {
         .content {
@@ -1352,38 +1423,14 @@ $mediaMiniTitle: 8px;
 
     }
 
-    // .scholarship .under-blocks .subtitle-block {
-    //     width: 230px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .second-block {
-    //     width: 230px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-    //     width: 230px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block {
-    //     width: 220px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .second-block {
-    //     width: 220px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-    //     width: 220px !important;
-    // }
-
-    // .scholarship .main-content .team-title {
-    //     width: 100% !important;
-    // }
+    .feature .structure-block {
+        padding-top: 30px !important;
+    }
 }
 
 @media (max-width: 495px) {
     .feature .graph-block {
-        width: 400px !important;
+        width: 100% !important;
     }
 
     .feature .graph-block .tenis-img {
@@ -1392,9 +1439,9 @@ $mediaMiniTitle: 8px;
 }
 
 @media (max-width: 485px) {
-    .feature .structure-block .main-graphs .graph-block {
-        width: 450px !important;
-    }
+    // .feature .structure-block .main-graphs .graph-block {
+    //     width: 450px !important;
+    // }
 
     .feature .graph-block .tenis-img {
         width: 100px !important;
@@ -1404,6 +1451,26 @@ $mediaMiniTitle: 8px;
 @media (max-width: 560px) {
     .mediaPriceName {
         font-size: $mediaPriceName !important;
+    }
+
+    .feature .feature-info .info-card img {
+        width: 55px !important;
+    }
+
+    .entrance-new .cards .card .head-info .item h4 {
+        font-size: 12px !important;
+    }
+
+    .entrance-new .cards .card .head-info .item p {
+        font-size: 12px !important;
+    }
+
+    .entrance-new .high-title-block p {
+        font-size: 12px !important;
+    }
+
+    .entrance-new .cards .down-info .info p {
+        padding-top: 5px !important;
     }
 
     .mediaTitle {
@@ -1419,7 +1486,79 @@ $mediaMiniTitle: 8px;
     }
 }
 
+@media (max-width: 525px) {
+    .desktop-graph {
+        display: none !important;
+    }
+
+    .entrance-new .high-title-block p {
+        font-size: 12px !important;
+    }
+}
+
 @media (max-width: 420px) {
+
+    .contact-form .info-form .male-block .info-male {
+        justify-content: flex-start !important;
+    }
+
+    .contact-form form .btn-block {
+        margin-top: 10px !important;
+    }
+
+    .contact-form form .info-form .contact-name {
+        margin-top: 10px !important;
+    }
+
+    .phone-max-width {
+        max-width: 130px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block .high-title {
+        font-size: 13px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block p {
+        font-size: 13px !important;
+    }
+
+    .scholarship p {
+        font-size: 13px !important;
+    }
+    
+
+    // .racket-img {
+    //     display: none;
+    // }
+
+    .mini-title-block {
+        h3 {
+            max-width: 295px !important;
+        }
+    }
+
+    .scholarship .under-blocks .subtitle-block p {
+        font-size: 13px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block p {
+        padding: 0 26px !important;
+    }
+
+    .scholarship .under-blocks .subtitle-block .row-titles .second-block {
+        height: inherit !important;
+        p {
+            font-size: 13px !important;
+        }
+    }
+
+    .feature .graph-block .full-graph .graph-phone-tab .foundament-tab .graph-stat .title-stat .players-title p {
+        font-size: 5px !important;
+    }
+
+    .join-univ .content .item-content .title {
+        max-height: 50px !important;
+    }
     .entrance-new .down-info h3 {
         font-size: $mediaTitle !important;
     }
@@ -1433,6 +1572,14 @@ $mediaMiniTitle: 8px;
 
         p {
             padding: 8px 0 !important;
+        }
+    }
+
+    .team-project {
+        .phone-block {
+            margin-top: 10px !important;
+            display: flex !important;
+            justify-content: center !important;
         }
     }
 }
@@ -1474,6 +1621,10 @@ $mediaMiniTitle: 8px;
     //     }
     // }
 
+    .contact-form .info-form .male-block .info-male {
+        width: 100% !important;
+    }
+
     .about-us {
         .info {
             max-height: inherit !important;
@@ -1481,18 +1632,41 @@ $mediaMiniTitle: 8px;
     }
 
     .contact-form {
-
         input {
-            width: 190px !important;
+            width: 100% !important;
 
             &::placeholder {
                 font-size: 10px !important;
             }
         }
+
+        .birthday-block {
+            width: 100% !important;
+            align-items: flex-start !important;
+            .desktop-input {
+                display: none !important;
+            }
+
+            .phone-input {
+                display: block !important;
+                border: 1px solid $blue !important;
+                border-radius: 5px !important;
+                padding: 5px 0 5px 30px !important;
+            }
+        }
+    }
+
+    .contact-form form .info-form .contact-name {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .contact-form .info-form .male-block .birthday-block {
+        flex-direction: column !important;
     }
 
     .feature .structure-block .main-graphs .graph-block {
-        width: 380px !important;
+        width: 100% !important;
     }
 
     .feature .structure-block .main-graphs .graph-block .tenis-img {
@@ -1511,6 +1685,7 @@ $mediaMiniTitle: 8px;
 
             .typing-title {
                 font-size: 20px !important;
+                max-width: 320px !important;
             }
 
             .default-title {
@@ -1523,32 +1698,9 @@ $mediaMiniTitle: 8px;
     .feature .info-card {
         width: 390px !important;
     }
-
-    // .scholarship .under-blocks .subtitle-block {
-    //     width: 180px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-    //     width: 180px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .second-block {
-    //     width: 180px !important;
-    // }
 }
 
 @media (max-width: 440px){
-    // .join-univ {
-    //     .content {
-    //         grid-template-columns: 160px 160px !important;
-    //     }
-    // }
-
-    // .about-us {
-    //     .content {
-    //         text-align: center;
-    //     }
-    // }
 
     .about-us .high-title-block {
         padding-bottom: 18px !important;
@@ -1691,12 +1843,19 @@ $mediaMiniTitle: 8px;
     }
 
     .scholarship .main-content .team-title h3 {
-        font-size: 10px !important;
-        padding: 7px 4px !important;
+        font-size: 12px !important;
+        padding: 7px 28px !important;
         color: black !important;
     }
     .scholarship .main-content .team-title {
         border-radius: 12px !important;
+    }
+
+    .feature .structure-block .structure-main .default-phone {
+        padding: 10px 0 15px 0 !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        font-size: 12px !important;
     }
 
     .skills {
@@ -1723,7 +1882,7 @@ $mediaMiniTitle: 8px;
                 background-position: left -12px top 40px !important;
             }
             p {
-                font-size: 10px !important;
+                font-size: 12px !important;
             }
         }
     }
@@ -1731,13 +1890,17 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 420px) {
 
+    .contact-form .info-form .male-block .info-male .radio-btn {
+        width: 10% !important;
+    }
+
     .feature .graph-block .open-graph {
         display: flex !important;
     }
 
     .feature .structure-main .racket-img {
-        top: 193px !important;
-        right: 234px !important;
+        top: 198px !important;
+        right: 230px !important;
     }
 
     .scholarship .sorts-grants .subtitle-block .subsub-title-block {
@@ -1755,7 +1918,7 @@ $mediaMiniTitle: 8px;
     }
 
     .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-        transform: translateY(-24px) !important;
+        transform: translateY(-14px) !important;
     }
 
     main {
@@ -1784,7 +1947,7 @@ $mediaMiniTitle: 8px;
         .item {
             h3 {
                 font: {
-                    size: 10px !important;
+                    size: 11px !important;
                     weight: 400 !important;
                     family: 'Montserrat', sans-serif !important;
                 }
@@ -1794,9 +1957,13 @@ $mediaMiniTitle: 8px;
 }
 
 @media (max-width: 400px){
+
+    .contact-form form .info-form .contact-name .phone-input {
+        padding: 5px 0 5px 10px !important;
+    }
     .contact-form {
         input {
-            width: 150px !important;
+            width: 100% !important;
             padding: 5px 0 5px 10px !important;
 
             &::placeholder {
@@ -1809,10 +1976,6 @@ $mediaMiniTitle: 8px;
         h2 {
             font-size: 20px !important;
         }
-    }
-
-    .entrance-new .high-title-block p {
-        font-size: 10px !important;
     }
 
     .entrance-new {
@@ -1846,14 +2009,10 @@ $mediaMiniTitle: 8px;
     }
 
     .about-us {
-        p {
-            font-size: 10px !important;
-        }
-
         .sub-info {
-            font-size: 10px !important;
+            font-size: 12px !important;
             span {
-                font-size: 10px !important;
+                font-size: 12px !important;
             }
         }
     }
@@ -1861,8 +2020,11 @@ $mediaMiniTitle: 8px;
     .feature {
         .info-card {
             width: 340px !important;
+            img {
+                width: 55px !important;
+            }
             p {
-                font-size: 12px !important;
+                font-size: 10px !important;
             }
         }
     }
@@ -1871,20 +2033,8 @@ $mediaMiniTitle: 8px;
         width: 310px !important;
     }
 
-    // .scholarship .under-blocks .subtitle-block {
-    //     width: 142px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .second-block {
-    //     width: 150px !important;
-    // }
-
-    // .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-    //     width: 158px !important;
-    // }
-
     .feature .structure-block .main-graphs .graph-block {
-        width: 320px !important;
+        width: 100% !important;
     }
 
     .feature .structure-main .sub-title-block {
@@ -1901,7 +2051,7 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 375px) {
     .entrance-new .head-info .item {
-        width: 100% !important;
+        width: 85% !important;
     }
 
     .entrance-new .cards .card .head-info .item p {
@@ -1921,8 +2071,8 @@ $mediaMiniTitle: 8px;
     }
 
     .feature .structure-main .racket-img{
-        right: 208px !important;
-        top: 160px !important;
+        right: 203px !important;
+        top: 190px !important;
     }
 
     .scholarship .sorts-grants .main-title h3 {
@@ -1976,13 +2126,19 @@ $mediaMiniTitle: 8px;
         .info-form {
             width: 100% !important;
 
-            p {
+            p, label {
                 font-size: 10px !important;
             }
         }
 
+        .birthday-block {
+            .phone-input {
+                padding: 5px 0 5px 10px !important;
+            }
+        }
+
         input {
-            width: 150px !important;
+            width: 100% !important;
             padding: 5px 0 5px 10px !important;
 
             &::placeholder {
@@ -2002,10 +2158,12 @@ $mediaMiniTitle: 8px;
         transform: translateY(-18px) !important;
     }
 
-    .feature .structure-main .absolute-img {
-        right: 184px !important;
-        top: 180px !important;
+    .feature .structure-main .graph-img {
+        right: 4px !important;
+        top: 330px !important;
     }
+
+    
 
     .mini-title-block {
         .line {
@@ -2103,7 +2261,7 @@ $mediaMiniTitle: 8px;
 
             .graph-img {
                 right: 4px !important;
-                top: 300px !important;
+                top: 330px !important;
             }
         }
 
@@ -2163,5 +2321,17 @@ $mediaMiniTitle: 8px;
                 font-size: 10px !important;
             }
         }
+    }
+}
+
+@media (max-width: 320px) {
+    .feature .structure-main .graph-img {
+        right: 4px !important;
+        top: 340px !important;
+    }
+
+    .feature .structure-main .racket-img {
+        right: 172px !important;
+        top: 186px !important;
     }
 }

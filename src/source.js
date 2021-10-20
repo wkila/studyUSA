@@ -76,13 +76,13 @@ function coordHandler(event) {
 
 function burgerClick(event) {
     let item = event.target
-    console.log('click')
+    console.log(item)
     
-    // if(item.classList.contains("burger") || item.classList.contains("line-burger") || item.classList.contains("burger-menu")) {
-    //     burger.classList.toggle("handleActive")
-    //     tabMenu.classList.toggle("handleActive")
-    //     backgroundBlack.classList.toggle("handleActive")
-    // }
+    if(item.classList.contains("burger") || item.classList.contains("line-burger") || item.classList.contains("burger-menu")) {
+        burger.classList.toggle("handleActive")
+        tabMenu.classList.toggle("handleActive")
+        backgroundBlack.classList.toggle("handleActive")
+    }
 }
 
 function linkHandler(event) {

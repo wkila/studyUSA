@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new HTMLPlugin({
-            filename: 'index.html',
+            filename: 'source.html',
             template: './src/source.html'
         })
     ],

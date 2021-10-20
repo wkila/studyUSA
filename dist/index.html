@@ -20,8 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- ./fonts -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>study USA</title>
-<script defer src="bundle.js"></script><script defer src="bundle.js"></script></head>
 <body>
     <div class="burger" id="burger" style="display: none;">
         <div class="burger-menu">
@@ -55,6 +57,10 @@
                 <div class="btn-block contactHandler">
                     <button class="submit-btn-form" type="submit">Отправить</button>
                 </div>
+                <div class="cross">
+                    <span class="up-cross"></span>
+                    <span class="down-cross"></span>
+                </div>
             </form>
         </div>
     </div>
@@ -65,6 +71,20 @@
                 <h2 class="contactHandler">Связаться с <span class="contactHandler">нами</span></h2>
 
                 <div class="info-form contactHandler">
+                    <div class="contact-name contactHandler male-block">
+                        <div class="info-male">
+                            <label>Пол: *</label>
+                            <input class="radio-btn" type="radio" name="male" id="male-gender">
+                            <label for="male-gender">Мужчина</label>
+                            <input class="radio-btn" type="radio" name="male" id="female-gender">
+                            <label for="female-gender">Женщина</label>
+                        </div>
+                        <div class="birthday-block">
+                            <p>Год рождения: *</p>
+                            <input type="name" class="desktop-input">
+                            <input type="text" class="phone-input" placeholder="Введите год рождения">
+                        </div>
+                    </div>
                     <div class="contact-name contactHandler">
                         <p class="contactHandler">Имя: *</p>
                         <input type="name" name="name" class="contactHandler" placeholder="Введите имя">
@@ -101,6 +121,7 @@
                 <div class="btn-block contactHandler">
                     <button class="submit-btn-form" type="submit">Отправить</button>
                 </div>
+                <div class="cross"></div>
             </form>
         </div>
     </div>
@@ -159,7 +180,7 @@
             <div class="content">
                 <div class="item-content __one">
                     <div class="title">
-                        <h3 class="mediaTitle"><span>Лучшее</span> образование в мире</h3>
+                        <h3 class="mediaTitle phone-max-width"><span>Лучшее</span> образование в мире</h3>
                     </div>
                 </div>
                 <div class="item-content __two">
@@ -201,6 +222,7 @@
                 </div>
             </div>
             <div class="cards">
+                <img class="phone-block" style="margin-right: 0;" src="img/col-new.jpg" alt="">
                 <img class="default-img" src="img/students_down_first.jpg" alt="">
                 <img class="delete-img" src="img/students_down_second.jpg" alt="">
                 <img class="delete-img" src="img/students_down_three.jpg" alt="">
@@ -212,7 +234,7 @@
                 </div>
                 <div class="structure-main">
                     <p class="default-phone phone-block first-phone mediaTitle"><span>NCAA -</span> Национальная Aссоциация Cтуденческого Cпорта</p>
-                    <img class="mobile-img" src="img/tenisguy-phone.png" alt="">
+                    <img class="mobile-img" src="img/tenisguyphone.jpg" alt="">
                     <img class="desktop-img" src="img/tenisguy.jpg" alt="">
                     <div class="info-structure">
                         <p class="mini-title"><span>NCAA - </span>Национальная Aссоциация Cтуденческого Cпорта</p>
@@ -547,12 +569,67 @@
                 <div class="img-flag"><img src="img/flag_usa.png" alt=""></div>
             </div>
         </section>
-
+        <div class="high-title-block center-block phone-block-swiper">
+            <h2>ПАКЕТЫ <span>УСЛУГ</span></h2>
+        </div>
+        <div class="swiper swiper-price-card phone-swiper-block">
+            <div class="swiper-wrapper">
+                <div class="item-card swiper-slide">
+                    <div class="card">
+                        <div class="main-info">
+                            <h3 class="mediaPriceName">ПАКЕТ «СТАРТОВЫЙ»</h3>
+                            <p class="price-title mediaPrice">$1850</p>
+                            <div class="info">
+                                <p class="mediaTitle">Составление списка университетов</p>
+                                <p class="mediaTitle">Подготовка и размещение теннисного профайла</p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="contact-btn first-form-btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card swiper-slide">
+                    <div class="card">
+                        <div class="main-info">
+                            <h3 class="mediaPriceName">ПАКЕТ «УСПЕХ»</h3>
+                            <p class="price-title mediaPrice">$3850</p>
+                            <div class="info">
+                                <p class="mediaTitle">Составление списка университетов</p>
+                                <p class="mediaTitle">Подготовка и размещение теннисного профайла</p>
+                                <p class="mediaTitle">Курирование подготовки и сдачи TOEFL и SAT</p>
+                                <p class="mediaTitle">Активный поиск и коммуникация с университетами</p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="contact-btn first-form-btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card swiper-slide">
+                    <div class="card" style="margin-right: 0;">
+                        <div class="main-info">
+                            <h3 class="mediaPriceName">ПАКЕТ «ПОЛНЫЙ»</h3>
+                            <p class="price-title mediaPrice">$4750</p>
+                            <div class="info">
+                                <p class="mediaTitle">Составление списка университетов</p>
+                                <p class="mediaTitle">Подготовка и размещение теннисного профайла</p>
+                                <p class="mediaTitle">Курирование подготовки и сдачи TOEFL и SAT</p>
+                                <p class="mediaTitle">Активный поиск и коммуникация с университетами</p>
+                                <p class="mediaTitle">Заполнение заявки финансовой формы, написание эссе, и рекомендательных писем</p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="contact-btn first-form-btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="mainSection service" id="service">
             <div class="high-title-block">
                 <h2>ПАКЕТЫ <span>УСЛУГ</span></h2>
             </div>
-
             <div class="cards">
                 <div class="item-card">
                     <div class="card">
@@ -707,6 +784,9 @@
                 <p class="mediaTitle">Мы сотрудничаем с успешными тренерами по подготовке к TOEFL и SAT имеющими опыт работы со спортсменами</p>
             </div>
         </section>
+        <div class="high-title-block center-block phone-block-swiper">
+            <h2><span>НАША</span> КОМАНДА</h2>
+        </div>
 
         <section class="mainSection team-project" id="contacts">
             <div class="high-title-block">
@@ -728,9 +808,29 @@
                 </div>
             </div>
             <div class="btn-block phone-block">
-                <button>Связаться с нами</button>
+                <button class="contact-btn first-form-btn">Связаться с нами</button>
             </div>
         </section>
+
+        <section class="mainSection swiper phone-swiper-block margin-swiper" id="contacts">
+            <div class="content swiper-wrapper">
+                <div class="item swiper-slide">
+                    <img src="img/sergey.png" alt="">
+                    <h3>Сергей</h3>
+                </div>
+                <div class="item swiper-slide">
+                    <img src="img/eldar.png" alt="">
+                    <h3>Эльдар</h3>
+                </div>
+                <div class="item swiper-slide">
+                    <img src="img/olga.png" alt="">
+                    <h3>Ольга</h3>
+                </div>
+            </div>
+        </section>
+        <div class="btn-block phone-block phone-btn-block">
+            <button class="contact-btn first-form-btn">Связаться с нами</button>
+        </div>
     </main>
     <footer class="mainSection header-wrapper" style="padding-top: 0;">
         <nav>
@@ -752,5 +852,6 @@
             <button class="contact-btn first-form-btn">Связаться с нами</button>
         </nav>
     </footer>
+    <script src="source.js"></script>
 </body>
 </html>
