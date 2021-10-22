@@ -25,6 +25,14 @@ $mediaMiniTitle: 8px;
         }
     }
 
+    .contact-form form .info-form .contact-name {
+        width: 100% !important;
+    }
+
+    .contact-form .info-form .labels {
+        width: 250px !important;
+    }
+
     .phone-block {
         display: block !important;
     }
@@ -348,6 +356,10 @@ $mediaMiniTitle: 8px;
 }
 
 @media (max-width: 1200px) {
+
+    .header-wrapper a {
+        font-size: 14px !important;
+    }
     .feature .structure-block .structure-main {
         flex-wrap: nowrap !important;
         flex-direction: row !important;
@@ -407,9 +419,29 @@ $mediaMiniTitle: 8px;
     .scholarship .content .main-content {
         margin-top: 80px !important;
     }
+
+    footer {
+        li {
+            padding: 0 4px !important;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
+    .header-wrapper a {
+        font-size: 12px !important;
+    }
+
+    .feature .structure-main .racket-img {
+        max-width: 13% !important;
+        top: 217px !important;
+        right: 768px !important;
+    }
+
+    header .contact-btn {
+        font-size: 14px !important;
+    }
+
     .feature .structure-block .structure-main {
         flex-wrap: nowrap !important;
         flex-direction: row !important;
@@ -451,6 +483,14 @@ $mediaMiniTitle: 8px;
 
     .scholarship .main-content .team-title {
         width: 500px !important;
+    }
+}
+
+@media (max-width: 1020px) {
+    .feature .structure-main .racket-img {
+        max-width: 10% !important;
+        top: 230px !important;
+        right: 670px !important;
     }
 }
 
@@ -1498,6 +1538,113 @@ $mediaMiniTitle: 8px;
 
 @media (max-width: 420px) {
 
+    .skills .item {
+        &.one {
+            background-position: left 5px top 20px !important;
+            background-size: 50px !important;
+        }
+
+        &.two {
+            background-position: left 3px top 30px !important;
+        }
+
+        &.three {
+            background-position: left 1px top 45px !important;
+        }
+
+        &.four {
+            background-position: left -1px top 21px !important;
+        }
+    }
+
+    .about-us .content .sub-info span {
+        font-size: 14px !important;
+    }
+
+    .second-form form .info-form {
+        overflow: scroll !important;
+        height: 360px !important;
+    }
+
+    .contact-form .info-form .male-block .info-male .radio-btn {
+        width: 10% !important;
+    }
+
+    .feature .graph-block .open-graph {
+        display: flex !important;
+    }
+
+    .feature .structure-main .racket-img {
+        top: 198px !important;
+        left: 64px !important;
+    }
+
+    .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+        min-height: 106px !important;
+
+        &.academ-title {
+            height: 106px !important;
+        }
+    }
+
+    .feature .structure-block .main-graphs .graph-block {
+        .desktop-graph {
+            display: none !important;
+        }
+    }
+
+    .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+        transform: translateY(-14px) !important;
+    }
+
+    main {
+        .header-inner {
+            background: no-repeat url(img/bg-phone.png) !important;
+            background-size: cover !important;
+        }
+    }
+
+    .scholarship .content .team  {
+        margin-left: 0  !important;
+    }
+
+    .contact-form form h2 {
+        padding: 0 !important;
+    }
+    .header-inner .card-info .content .default-title {
+        padding: 0 !important;
+    }
+
+    .header-inner .content {
+        width: 350px !important;
+    }
+
+    .entrance {
+        .item {
+            h3 {
+                font: {
+                    size: 11px !important;
+                    weight: 400 !important;
+                    family: 'Montserrat', sans-serif !important;
+                }
+            }
+        }
+    }
+
+    .first-form {
+        .contact-form {
+            form {
+                .info-form {
+                    height: auto !important;
+                }
+            }
+        }
+    }
+
+    .entrance-new .cards .card-consultations .default {
+        text-align: center !important;
+    }
+
     .contact-form .info-form .male-block .info-male {
         justify-content: flex-start !important;
     }
@@ -1568,7 +1715,7 @@ $mediaMiniTitle: 8px;
     }
 
     .entrance-new .head-info .item {
-        width: 70% !important;
+        width: 80% !important;
 
         p {
             padding: 8px 0 !important;
@@ -1686,6 +1833,7 @@ $mediaMiniTitle: 8px;
             .typing-title {
                 font-size: 20px !important;
                 max-width: 320px !important;
+                margin: 0 auto !important;
             }
 
             .default-title {
@@ -1888,74 +2036,6 @@ $mediaMiniTitle: 8px;
     }
 }
 
-@media (max-width: 420px) {
-
-    .contact-form .info-form .male-block .info-male .radio-btn {
-        width: 10% !important;
-    }
-
-    .feature .graph-block .open-graph {
-        display: flex !important;
-    }
-
-    .feature .structure-main .racket-img {
-        top: 198px !important;
-        right: 230px !important;
-    }
-
-    .scholarship .sorts-grants .subtitle-block .subsub-title-block {
-        min-height: 106px !important;
-
-        &.academ-title {
-            height: 106px !important;
-        }
-    }
-
-    .feature .structure-block .main-graphs .graph-block {
-        .desktop-graph {
-            display: none !important;
-        }
-    }
-
-    .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-        transform: translateY(-14px) !important;
-    }
-
-    main {
-        .header-inner {
-            background: no-repeat url(img/bg-phone.png) !important;
-            background-size: cover !important;
-        }
-    }
-
-    .scholarship .content .team  {
-        margin-left: 0  !important;
-    }
-
-    .contact-form form h2 {
-        padding: 0 !important;
-    }
-    .header-inner .card-info .content .default-title {
-        padding: 0 !important;
-    }
-
-    .header-inner .content {
-        width: 350px !important;
-    }
-
-    .entrance {
-        .item {
-            h3 {
-                font: {
-                    size: 11px !important;
-                    weight: 400 !important;
-                    family: 'Montserrat', sans-serif !important;
-                }
-            }
-        }
-    }
-}
-
 @media (max-width: 400px){
 
     .contact-form form .info-form .contact-name .phone-input {
@@ -2052,6 +2132,25 @@ $mediaMiniTitle: 8px;
 @media (max-width: 375px) {
     .entrance-new .head-info .item {
         width: 85% !important;
+    }
+
+    .skills .item {
+        &.one {
+            background-position: left 8px top 33px !important;
+            background-size: 50px !important;
+        }
+
+        &.two {
+            background-position: left 3px top 30px !important;
+        }
+
+        &.three {
+            background-position: left 1px top 45px !important;
+        }
+
+        &.four {
+            background-position: left -1px top 35px !important;
+        }
     }
 
     .entrance-new .cards .card .head-info .item p {
@@ -2325,6 +2424,37 @@ $mediaMiniTitle: 8px;
 }
 
 @media (max-width: 320px) {
+    .contact-form h2 {
+        font-size: 27px !important;
+    }
+
+    .entrance-new .head-info .item {
+        width: 100% !important;
+    }
+
+    .entrance-new .head-info .item .item-nodes {
+        width: 100% !important;
+    }
+
+    .skills .item {
+        &.one {
+            background-position: left 8px top 26px !important;
+            background-size: 50px !important;
+        }
+
+        &.two {
+            background-position: left -1px top 23px !important;
+        }
+
+        &.three {
+            background-position: left -1px top 40px !important;
+        }
+
+        &.four {
+            background-position: left -2px top 30px !important;
+        }
+    }
+
     .feature .structure-main .graph-img {
         right: 4px !important;
         top: 340px !important;

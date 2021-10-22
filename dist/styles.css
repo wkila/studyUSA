@@ -97,6 +97,14 @@ select {
     max-width: 80% !important;
   }
 
+  .contact-form form .info-form .contact-name {
+    width: 100% !important;
+  }
+
+  .contact-form .info-form .labels {
+    width: 250px !important;
+  }
+
   .phone-block {
     display: block !important;
   }
@@ -364,6 +372,10 @@ select {
   }
 }
 @media (max-width: 1200px) {
+  .header-wrapper a {
+    font-size: 14px !important;
+  }
+
   .feature .structure-block .structure-main {
     -ms-flex-wrap: nowrap !important;
         flex-wrap: nowrap !important;
@@ -440,8 +452,26 @@ select {
   .scholarship .content .main-content {
     margin-top: 80px !important;
   }
+
+  footer li {
+    padding: 0 4px !important;
+  }
 }
 @media (max-width: 1024px) {
+  .header-wrapper a {
+    font-size: 12px !important;
+  }
+
+  .feature .structure-main .racket-img {
+    max-width: 13% !important;
+    top: 217px !important;
+    right: 768px !important;
+  }
+
+  header .contact-btn {
+    font-size: 14px !important;
+  }
+
   .feature .structure-block .structure-main {
     -ms-flex-wrap: nowrap !important;
         flex-wrap: nowrap !important;
@@ -496,6 +526,13 @@ select {
 
   .scholarship .main-content .team-title {
     width: 500px !important;
+  }
+}
+@media (max-width: 1020px) {
+  .feature .structure-main .racket-img {
+    max-width: 10% !important;
+    top: 230px !important;
+    right: 670px !important;
   }
 }
 @media (max-width: 980px) {
@@ -1411,6 +1448,95 @@ select {
   }
 }
 @media (max-width: 420px) {
+  .skills .item.one {
+    background-position: left 5px top 20px !important;
+    background-size: 50px !important;
+  }
+  .skills .item.two {
+    background-position: left 3px top 30px !important;
+  }
+  .skills .item.three {
+    background-position: left 1px top 45px !important;
+  }
+  .skills .item.four {
+    background-position: left -1px top 21px !important;
+  }
+
+  .about-us .content .sub-info span {
+    font-size: 14px !important;
+  }
+
+  .second-form form .info-form {
+    overflow: scroll !important;
+    height: 360px !important;
+  }
+
+  .contact-form .info-form .male-block .info-male .radio-btn {
+    width: 10% !important;
+  }
+
+  .feature .graph-block .open-graph {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .feature .structure-main .racket-img {
+    top: 198px !important;
+    left: 64px !important;
+  }
+
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block {
+    min-height: 106px !important;
+  }
+  .scholarship .sorts-grants .subtitle-block .subsub-title-block.academ-title {
+    height: 106px !important;
+  }
+
+  .feature .structure-block .main-graphs .graph-block .desktop-graph {
+    display: none !important;
+  }
+
+  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
+    -webkit-transform: translateY(-14px) !important;
+            transform: translateY(-14px) !important;
+  }
+
+  main .header-inner {
+    background: no-repeat url(img/bg-phone.png) !important;
+    background-size: cover !important;
+  }
+
+  .scholarship .content .team {
+    margin-left: 0 !important;
+  }
+
+  .contact-form form h2 {
+    padding: 0 !important;
+  }
+
+  .header-inner .card-info .content .default-title {
+    padding: 0 !important;
+  }
+
+  .header-inner .content {
+    width: 350px !important;
+  }
+
+  .entrance .item h3 {
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  .first-form .contact-form form .info-form {
+    height: auto !important;
+  }
+
+  .entrance-new .cards .card-consultations .default {
+    text-align: center !important;
+  }
+
   .contact-form .info-form .male-block .info-male {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
@@ -1477,7 +1603,7 @@ select {
   }
 
   .entrance-new .head-info .item {
-    width: 70% !important;
+    width: 80% !important;
   }
   .entrance-new .head-info .item p {
     padding: 8px 0 !important;
@@ -1598,6 +1724,7 @@ select {
   .header-inner .content .typing-title {
     font-size: 20px !important;
     max-width: 320px !important;
+    margin: 0 auto !important;
   }
   .header-inner .content .default-title {
     font-size: 18px;
@@ -1781,65 +1908,6 @@ select {
     font-size: 12px !important;
   }
 }
-@media (max-width: 420px) {
-  .contact-form .info-form .male-block .info-male .radio-btn {
-    width: 10% !important;
-  }
-
-  .feature .graph-block .open-graph {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-
-  .feature .structure-main .racket-img {
-    top: 198px !important;
-    right: 230px !important;
-  }
-
-  .scholarship .sorts-grants .subtitle-block .subsub-title-block {
-    min-height: 106px !important;
-  }
-  .scholarship .sorts-grants .subtitle-block .subsub-title-block.academ-title {
-    height: 106px !important;
-  }
-
-  .feature .structure-block .main-graphs .graph-block .desktop-graph {
-    display: none !important;
-  }
-
-  .scholarship .under-blocks .subtitle-block .row-titles .subsub-title-block.second_title {
-    -webkit-transform: translateY(-14px) !important;
-            transform: translateY(-14px) !important;
-  }
-
-  main .header-inner {
-    background: no-repeat url(img/bg-phone.png) !important;
-    background-size: cover !important;
-  }
-
-  .scholarship .content .team {
-    margin-left: 0 !important;
-  }
-
-  .contact-form form h2 {
-    padding: 0 !important;
-  }
-
-  .header-inner .card-info .content .default-title {
-    padding: 0 !important;
-  }
-
-  .header-inner .content {
-    width: 350px !important;
-  }
-
-  .entrance .item h3 {
-    font-size: 11px !important;
-    font-weight: 400 !important;
-    font-family: "Montserrat", sans-serif !important;
-  }
-}
 @media (max-width: 400px) {
   .contact-form form .info-form .contact-name .phone-input {
     padding: 5px 0 5px 10px !important;
@@ -1937,6 +2005,20 @@ select {
 @media (max-width: 375px) {
   .entrance-new .head-info .item {
     width: 85% !important;
+  }
+
+  .skills .item.one {
+    background-position: left 8px top 33px !important;
+    background-size: 50px !important;
+  }
+  .skills .item.two {
+    background-position: left 3px top 30px !important;
+  }
+  .skills .item.three {
+    background-position: left 1px top 45px !important;
+  }
+  .skills .item.four {
+    background-position: left -1px top 35px !important;
   }
 
   .entrance-new .cards .card .head-info .item p {
@@ -2170,6 +2252,32 @@ select {
   }
 }
 @media (max-width: 320px) {
+  .contact-form h2 {
+    font-size: 27px !important;
+  }
+
+  .entrance-new .head-info .item {
+    width: 100% !important;
+  }
+
+  .entrance-new .head-info .item .item-nodes {
+    width: 100% !important;
+  }
+
+  .skills .item.one {
+    background-position: left 8px top 26px !important;
+    background-size: 50px !important;
+  }
+  .skills .item.two {
+    background-position: left -1px top 23px !important;
+  }
+  .skills .item.three {
+    background-position: left -1px top 40px !important;
+  }
+  .skills .item.four {
+    background-position: left -2px top 30px !important;
+  }
+
   .feature .structure-main .graph-img {
     right: 4px !important;
     top: 340px !important;
@@ -3940,7 +4048,7 @@ main {
 .about-us .content .sub-info span {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   color: #053651;
 }
 
@@ -4121,6 +4229,30 @@ footer .line {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.contact-form .info-form .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+.contact-form .info-form .label-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-form .info-form .label-content input {
+  width: inherit !important;
+  margin-right: 15px;
+}
 .contact-form .info-form .male-block .info-male {
   width: 300px;
   display: -webkit-box;
@@ -4221,7 +4353,7 @@ footer .line {
 .contact-form form h2 {
   font-weight: 400;
   font-size: 70px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   padding: 45px 0 30px 0;
 }
 .contact-form form h2 span {
@@ -4251,7 +4383,8 @@ footer .line {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  width: 75%;
+  margin: 15px auto 0 auto;
 }
 .contact-form form .info-form .contact-name input {
   max-width: 420px;
